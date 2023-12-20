@@ -25,3 +25,28 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.background-animation {
+  animation: backgroundAnimation 30s infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-image: url("/asset/image/image-01.webp");
+  }
+  20% {
+    background-image: url("/asset/image/image-02.webp");
+  }
+  40% {
+    background-image: url("/asset/image/image-03.webp");
+  }
+  60% {
+    background-image: url("/asset/image/image-04.webp");
+  }
+  80% {
+    background-image: url("/asset/image/image-05.webp");
+  }
+  100% {
+    background-image: url("/asset/image/image-06.webp");
+  }
+}
