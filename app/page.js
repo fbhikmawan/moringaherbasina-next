@@ -1,34 +1,40 @@
-import Link from "next/link";
+import Script from 'next/script'
+import Image from 'next/image'
+
+import HeaderSection from '../sections/HeaderSection'
+import SliderSection from '../sections/SliderSection'
+import ServiceSection from '../sections/ServiceSection'
+import AboutSection from '../sections/AboutSection'
+import TeamSection from '../sections/TeamSection'
+import ClientSection from '../sections/ClientSection'
+import InfoSection from '../sections/InfoSection'
+import FooterSection from '../sections/FooterSection'
+
+import heroBg from '/assets/images/hero-bg.jpg'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-cover background-animation">
-      <div className="space-y-4">
-        <Link href="/theme-1/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 1
-        </Link>
-        <Link href="/theme-2/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 2
-        </Link>
-        <Link href="/theme-3/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 3
-        </Link>
-        <Link href="/theme-4/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 4
-        </Link>
-        <Link href="/theme-5/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 5
-        </Link>
-        <Link href="/theme-6/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 6
-        </Link>
-        <Link href="/theme-7/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 7
-        </Link>
-        <Link href="/theme-8/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 8
-        </Link>
+    <>
+      <div className="hero_area">
+        <div className="hero_bg_box">
+          <Image src={heroBg} alt="Hero Background" placeholder="blur" />
+        </div>
+        <HeaderSection />
+        <SliderSection />
       </div>
-    </div>
+      <ServiceSection />
+      <AboutSection />
+      <TeamSection />
+      <ClientSection />
+      <InfoSection />
+      <FooterSection />
+
+      <Script src="/assets/js/jquery-3.4.1.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/js/bootstrap.js" strategy="beforeInteractive" />
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" strategy="beforeInteractive" />
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" strategy="beforeInteractive" />
+      <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" strategy="beforeInteractive" />
+      <Script src="/assets/js/custom.js" strategy="lazyOnload" />
+    </>
   )
 }

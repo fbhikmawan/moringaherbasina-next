@@ -1,7 +1,14 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { Poppins } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+import './globals.css'
+import './bootstrap.css'
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'jquery-nice-select/css/nice-select.css';
+import './font-awesome.min.css'
+import './style.css'
+import './responsive.css'
+
+const poppins = Poppins({ weight: ['400','600','700'], subsets: ['latin'] })
 
 export const metadata = {
   title: 'Theme Website Proposal',
@@ -22,7 +29,9 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>
+        {children}
+      </body>
     </html>
   )
 }
