@@ -1,8 +1,9 @@
 import Script from 'next/script'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
 
 import HeaderSection from '../sections/HeaderSection'
-import SliderSection from '../sections/SliderSection'
+const SliderSection = dynamic(() => import('../sections/SliderSection'), { ssr: false });
 import ServiceSection from '../sections/ServiceSection'
 import AboutSection from '../sections/AboutSection'
 import TeamSection from '../sections/TeamSection'
