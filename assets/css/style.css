@@ -592,6 +592,9 @@ a:focus {
   background-color: transparent;
   color: #0f5c09;
 }
+.achievement_section .container {
+  max-width: 850px;
+}
 
 .achievement_section .box {
   display: -webkit-box;
@@ -732,7 +735,7 @@ a:focus {
   min-width: 100%;
 }
 
-.client_section .client_container {
+.testimonial_section .testimonial_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -748,37 +751,37 @@ a:focus {
   margin-top: 15px;
 }
 
-.client_section .client_container .img-box {
+.testimonial_section .testimonial_container .img-box {
   width: 125px;
 }
 
-.client_section .client_container .img-box img {
+.testimonial_section .testimonial_container .img-box img {
   width: 100%;
   border-radius: 5px;
 }
 
-.client_section .client_container .detail-box {
+.testimonial_section .testimonial_container .detail-box {
   margin-top: 25px;
 }
 
-.client_section .client_container .detail-box h5 {
+.testimonial_section .testimonial_container .detail-box h5 {
   color: #1d1b28;
   margin-bottom: 15px;
 }
 
-.client_section .client_container .detail-box p {
+.testimonial_section .testimonial_container .detail-box p {
   color: #1d1b28;
   margin: 20px;
 }
 
-.client_section .client_container .detail-box span {
+.testimonial_section .testimonial_container .detail-box span {
   margin-top: 25px;
   color: #1eb36a;
   font-size: 28px;
 }
 
-.client_section .carousel-control-prev,
-.client_section .carousel-control-next {
+.testimonial_section .carousel-control-prev,
+.testimonial_section .carousel-control-next {
   width: 50px;
   height: 50px;
   border-radius: 0px;
@@ -791,21 +794,21 @@ a:focus {
   border-radius: 10px;
 }
 
-.client_section .carousel-control-prev {
+.testimonial_section .carousel-control-prev {
   left: 15%;
 }
 
-.client_section .carousel-control-next {
+.testimonial_section .carousel-control-next {
   right: 15%;
 }
-.client_section .carousel-control-prev:hover,
-.client_section .carousel-control-next:hover {
+.testimonial_section .carousel-control-prev:hover,
+.testimonial_section .carousel-control-next:hover {
   color: black;
   background-color: white;
   border: 1px solid black;
 }
 
-.client_section .carousel_btn-box {
+.testimonial_section .carousel_btn-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

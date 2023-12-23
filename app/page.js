@@ -3,7 +3,7 @@ import SliderSection from '../sections/SliderSection'
 import ProductSection from '../sections/ProductSection'
 import AboutSection from '../sections/AboutSection'
 import AchievementSection from '../sections/AchievementSection'
-import ClientSection from '../sections/ClientSection'
+import TestimonialSection from '../sections/TestimonialSection'
 import InfoSection from '../sections/InfoSection'
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <ProductSection />
       <AboutSection />
       <AchievementSection />
-      <ClientSection />
+      <TestimonialSection />
       <InfoSection />
     </>
   )
