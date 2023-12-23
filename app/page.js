@@ -1,5 +1,4 @@
 import Script from 'next/script'
-import Image from 'next/image'
 import dynamic from 'next/dynamic'
 
 import HeaderSection from '../sections/HeaderSection'
@@ -11,15 +10,10 @@ import ClientSection from '../sections/ClientSection'
 import InfoSection from '../sections/InfoSection'
 import FooterSection from '../sections/FooterSection'
 
-import heroBg from '/assets/images/hero-bg.jpg'
-
 export default function Home() {
   return (
     <>
       <div className="hero_area">
-        <div className="hero_bg_box">
-          <Image src={heroBg} alt="Hero Background" placeholder="blur" />
-        </div>
         <HeaderSection />
         <SliderSection />
       </div>

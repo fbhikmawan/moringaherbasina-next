@@ -4,7 +4,6 @@ function getYear() {
     var currentYear = currentDate.getFullYear();
     document.querySelector("#displayYear").innerHTML = currentYear;
 }
-
 getYear();
 
 //service section owl carousel
@@ -54,10 +53,6 @@ var owl = $('.portfolio_carousel').owlCarousel({
         }
     }
 })
-
-
-// owl.owlcarousel2_filter
-
 $('.owl-filter-bar').on('click', '.item', function (e) {
     var $items = $('.owl-filter-bar a')
     var $item = $(this);
