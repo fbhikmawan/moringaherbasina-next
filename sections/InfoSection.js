@@ -3,13 +3,13 @@ import Link from 'next/link'
 
 export default function InfoSection() {
   return (
-    <section className="info_section ">
+    <section id="contact" className="info_section ">
       <div className="container">
         <div className="info_top">
           <div className="row">
             <div className="col-md-3 ">
               <Link className="navbar-brand" href="/">
-                Finter
+                Logo
               </Link>
             </div>
             <div className="col-md-5 ">
@@ -51,7 +51,7 @@ export default function InfoSection() {
             <div className="col-lg-3 col-md-6">
               <div className="info_detail">
                 <h5>
-                  Company
+                  Company Name
                 </h5>
                 <p>
                   Randomised words which don't look even slightly believable. If you are going to use a passage of

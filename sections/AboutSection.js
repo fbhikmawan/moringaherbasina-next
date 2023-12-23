@@ -6,7 +6,7 @@ import aboutImage from '/assets/images/about-img.jpg'
 
 export default function AboutSection() {
   return (
-    <section className="about_section">
+    <section id="about" className="about_section">
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-5 offset-md-1">
@@ -19,7 +19,7 @@ export default function AboutSection() {
               <p className="detail_p_mt">
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, orThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
               </p>
-              <Link href="about.html" className="">
+              <Link href="/about" className="">
                 Read More
               </Link>
             </div>

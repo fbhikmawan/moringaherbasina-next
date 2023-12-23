@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import TeamMember from '../components/TeamMember'
 
@@ -14,7 +15,7 @@ export default function TeamSection() {
   ];
 
   return (
-    <section className="team_section layout_padding">
+    <section id="team" className="team_section layout_padding">
       <div className="container">
         <div className="heading_container heading_center">
           <h2>
@@ -30,6 +31,9 @@ export default function TeamSection() {
             <TeamMember key={index} image={member.image} name={member.name} role={member.role} />
           ))}
         </div>
+        <Link href="/team" className="">
+          See Details
+        </Link>
       </div>
     </section>
   )

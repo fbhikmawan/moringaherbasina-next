@@ -1,9 +1,10 @@
 import React from 'react'
 import ServiceCarousel from '@/components/ServiceCarousel'
+import Link from 'next/link'
 
 export default function ServiceSection() {
   return (
-    <section className="service_section layout_padding">
+    <section id="services" className="service_section layout_padding">
       <div className="container">
         <div className="heading_container heading_center ">
           <h2 className="">
@@ -17,9 +18,9 @@ export default function ServiceSection() {
           <ServiceCarousel />
         </div>
         <div className="btn-box">
-          <a href="">
+          <Link href="/services">
             Read More
-          </a>
+          </Link>
         </div>
       </div>
     </section>
