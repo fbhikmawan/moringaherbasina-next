@@ -1,0 +1,39 @@
+import React from 'react'
+import Link from 'next/link'
+
+import Achievement from '../components/Achievement'
+
+import t1 from '/assets/images/t1.jpg'
+import t2 from '/assets/images/t2.jpg'
+import t3 from '/assets/images/t3.jpg'
+import t4 from '/assets/images/t3.jpg'
+
+export default function AchievementSection() {
+  const achievements = [
+    { image: t1, name: "Organic Certification", resume: "Achieved organic certification for our Moringa farms, ensuring the highest quality products." },
+    { image: t2, name: "Community Outreach", resume: "Initiated a community outreach program to educate local farmers about sustainable farming practices." },
+    { image: t3, name: "Product Innovation", resume: "Launched a new line of Moringa-based health supplements, expanding our product range." },
+    { image: t4, name: "Sustainability Award", resume: "Received an award for our commitment to sustainable and environmentally friendly practices." },
+  ];
+
+  return (
+    <section id="achievements" className="achievement_section layout_padding">
+      <div className="container">
+        <div className="heading_container heading_center">
+          <h2>
+            Our Achievements
+          </h2>
+          <p>
+            We're proud of the work we've done and the milestones we've achieved. <br/>
+            Here are some of our key achievements and activities.
+          </p>
+        </div>
+        <div className="row">
+          {achievements.map((achieve, index) => (
+            <Achievement key={index} image={achieve.image} name={achieve.name} resume={achieve.resume} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}

@@ -2,7 +2,7 @@ import HeaderSection from '../sections/HeaderSection'
 import SliderSection from '../sections/SliderSection'
 import ProductSection from '../sections/ProductSection'
 import AboutSection from '../sections/AboutSection'
-import TeamSection from '../sections/TeamSection'
+import AchievementSection from '../sections/AchievementSection'
 import ClientSection from '../sections/ClientSection'
 import InfoSection from '../sections/InfoSection'
 
@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       <ProductSection />
       <AboutSection />
-      <TeamSection />
+      <AchievementSection />
       <ClientSection />
       <InfoSection />
     </>
