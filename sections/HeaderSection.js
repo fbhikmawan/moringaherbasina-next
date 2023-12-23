@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
+import NavBar from '/components/NavBar'
+
 export default function HeaderSection() {
   return (
     <header className="header_section">
@@ -17,23 +19,7 @@ export default function HeaderSection() {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <div className="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul className="navbar-nav collapse">
-                <li className="nav-item active">
-                  <Link className="nav-link" href="/">Home <span className="sr-only">(current)</span></Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" href="#products">Products</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" href="#about">About</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" href="#achievements">Achievements</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" href="#contact">Contact Us</Link>
-                </li>
-              </ul>
+              <NavBar />
             </div>
           </div>
         </nav>

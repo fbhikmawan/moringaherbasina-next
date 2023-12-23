@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
         <Script src="/assets/js/bootstrap.js" strategy="lazyOnload" />
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" strategy="beforeInteractive" />
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" strategy="beforeInteractive" />
+        <Script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js" strategy="beforeInteractive" />
         <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" strategy="beforeInteractive" />
         <Script src="/assets/js/custom.js" strategy="lazyOnload" />
       </body>

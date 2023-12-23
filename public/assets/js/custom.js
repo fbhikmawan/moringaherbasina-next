@@ -1,3 +1,12 @@
+$(document).ready(function(){
+    if ($('a[href*="#"]').length > 0) {
+        new SmoothScroll('a[href*="#"]', {
+            speed: 500,
+            easing: 'EaseInOutQuint'
+        });
+    }
+});
+
 // to get current year
 function getYear() {
     var currentDate = new Date();
