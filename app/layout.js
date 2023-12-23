@@ -1,6 +1,8 @@
 import { Poppins } from 'next/font/google'
 import Script from 'next/script'
 
+import FooterSection from '../sections/FooterSection'
+
 import '/assets/css/globals.css'
 import '/assets/css/bootstrap.css'
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -32,13 +34,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         {children}
+        <FooterSection />
 
-      <Script src="/assets/js/jquery-3.4.1.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/js/bootstrap.js" strategy="lazyOnload" />
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" strategy="beforeInteractive" />
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" strategy="beforeInteractive" />
-      <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" strategy="beforeInteractive" />
-      <Script src="/assets/js/custom.js" strategy="lazyOnload" />
+        <Script src="/assets/js/jquery-3.4.1.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/bootstrap.js" strategy="lazyOnload" />
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" strategy="beforeInteractive" />
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" strategy="beforeInteractive" />
+        <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/custom.js" strategy="lazyOnload" />
       </body>
     </html>
   )

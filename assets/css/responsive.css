@@ -19,7 +19,10 @@
   }
 
   .slider_section .detail-box h1 {
-    font-size: 2.5rem;
+    font-size: 80px;
+  }
+  .slider_section .detail-box p {
+    font-size: 24px;
   }
 
   .slider_section {

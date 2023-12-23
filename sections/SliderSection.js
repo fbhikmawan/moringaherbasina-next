@@ -17,7 +17,7 @@ export default function SliderSection() {
 
   return (
     <section className=" slider_section position-relative">
-      <div className="container">
+      <div className="container-fluid">
         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
           <ol className="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -31,14 +31,13 @@ export default function SliderSection() {
                   <div className="detail-box">
                     <div>
                       <h2>
-                        welcome to
+                        Welcome to
                       </h2>
                       <h1>
-                        web agency
+                        Our Moringa Leaves
                       </h1>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
+                        We manage, produce, and sell high-quality Moringa leaves<br/>for local and export markets.
                       </p>
                       <div className="">
                         <Link href="/contact">
@@ -56,15 +55,13 @@ export default function SliderSection() {
                   <div className="detail-box">
                     <div>
                       <h2>
-                        welcome to
-
+                        Our Commitment
                       </h2>
                       <h1>
-                        web agency
+                        Quality Products
                       </h1>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
+                        We are committed to deliver the best quality<br/>Moringa leaves to our customers.
                       </p>
                       <div className="">
                         <Link href="/contact">
@@ -82,14 +79,13 @@ export default function SliderSection() {
                   <div className="detail-box">
                     <div>
                       <h2>
-                        welcome to
+                        Ready for
                       </h2>
                       <h1>
-                        web agency
+                        The Broad Market
                       </h1>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
+                        We are ready to meet the demands of the broad market,<br/>both locally and internationally.
                       </p>
                       <div className="">
                         <Link href="/contact">

@@ -5,7 +5,6 @@ import AboutSection from '../sections/AboutSection'
 import TeamSection from '../sections/TeamSection'
 import ClientSection from '../sections/ClientSection'
 import InfoSection from '../sections/InfoSection'
-import FooterSection from '../sections/FooterSection'
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       <TeamSection />
       <ClientSection />
       <InfoSection />
-      <FooterSection />
     </>
   )
 }
