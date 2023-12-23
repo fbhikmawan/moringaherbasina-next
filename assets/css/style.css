@@ -80,7 +80,7 @@ a:focus {
 .hero_area {
   min-height: 100vh;
   background-color: #b5caee;
-  background-image: url(../assets/images/hero-bg.jpg);
+  background-image: url(../images/hero-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -258,7 +258,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../assets/images/menu.png);
+  background-image: url(../images/menu.png);
   background-size: 55px;
 }
 .navbar-nav.collapse:not(.show) {

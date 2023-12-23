@@ -1,13 +1,13 @@
 import { Poppins } from 'next/font/google'
 import Script from 'next/script'
 
-import './globals.css'
-import './bootstrap.css'
+import '/assets/css/globals.css'
+import '/assets/css/bootstrap.css'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'jquery-nice-select/css/nice-select.css';
-import './font-awesome.min.css'
-import './style.css'
-import './responsive.css'
+import '/assets/css/font-awesome.min.css'
+import '/assets/css/style.css'
+import '/assets/css/responsive.css'
 
 const poppins = Poppins({ weight: ['400','600','700'], subsets: ['latin'] })
 
