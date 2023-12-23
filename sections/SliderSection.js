@@ -1,7 +1,20 @@
-import React from 'react'
+'use client'
+
+import React, { useCallback } from 'react'
 import Link from 'next/link'
 
 export default function SliderSection() {
+  const navigateCarousel = useCallback((direction) => {
+    const carouselElement = $('#customCarousel1');
+    if (carouselElement.length > 0) {
+      if (direction === 'prev') {
+        carouselElement.carousel('prev');
+      } else if (direction === 'next') {
+        carouselElement.carousel('next');
+      }
+    }
+  }, []);
+
   return (
     <section className="slider_section ">
       <div id="customCarousel1" className="carousel slide" data-ride="carousel">
@@ -74,14 +87,14 @@ export default function SliderSection() {
           </div>
         </div>
         <div className="carousel_btn-box">
-          <Link className="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+          <a className="carousel-control-prev" onClick={() => navigateCarousel('prev')} role="button" data-slide="prev">
             <i className="fa fa-arrow-left" aria-hidden="true"></i>
             <span className="sr-only">Previous</span>
-          </Link> 
-          <Link className="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+          </a> 
+          <a className="carousel-control-next" onClick={() => navigateCarousel('next')} role="button" data-slide="next">
             <i className="fa fa-arrow-right" aria-hidden="true"></i>
             <span className="sr-only">Next</span>
-          </Link> 
+          </a> 
         </div>
       </div>
     </section>
