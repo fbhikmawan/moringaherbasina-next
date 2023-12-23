@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function SliderSection() {
   const navigateCarousel = useCallback((direction) => {
-    const carouselElement = $('#customCarousel1');
+    const carouselElement = $('#carouselExampleIndicators');
     if (carouselElement.length > 0) {
       if (direction === 'prev') {
         carouselElement.carousel('prev');
@@ -16,69 +16,86 @@ export default function SliderSection() {
   }, []);
 
   return (
-    <section className="slider_section ">
-      <div id="customCarousel1" className="carousel slide" data-ride="carousel">
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <div className="container ">
+    <section className=" slider_section position-relative">
+      <div className="container">
+        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+          <ol className="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
               <div className="row">
-                <div className="col-lg-10 col-md-11 mx-auto">
+                <div className="col">
                   <div className="detail-box">
-                    <h1>
-                      We Provide <br />
-                      Welding Services
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis fugit, sed tempora praesentium commodi error, hic recusandae repudiandae neque ad molestias, atque veritatis labore quae eveniet autem in
-                    </p>
-                    <div className="btn-box">
-                      <Link href="/contact" className="btn1">
-                        Contact Us
-                      </Link> 
+                    <div>
+                      <h2>
+                        welcome to
+                      </h2>
+                      <h1>
+                        web agency
+                      </h1>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                      </p>
+                      <div className="">
+                        <Link href="/contact">
+                          Contact us
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="carousel-item">
-            <div className="container ">
+            <div className="carousel-item">
               <div className="row">
-                <div className="col-lg-10 col-md-11 mx-auto">
+                <div className="col">
                   <div className="detail-box">
-                    <h1>
-                      We Provide <br />
-                      Welding Services
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis fugit, sed tempora praesentium commodi error, hic recusandae repudiandae neque ad molestias, atque veritatis labore quae eveniet autem in
-                    </p>
-                    <div className="btn-box">
-                      <Link href="/contact" className="btn1">
-                        Contact Us
-                      </Link> 
+                    <div>
+                      <h2>
+                        welcome to
+
+                      </h2>
+                      <h1>
+                        web agency
+                      </h1>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                      </p>
+                      <div className="">
+                        <Link href="/contact">
+                          Contact us
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="carousel-item">
-            <div className="container ">
+            <div className="carousel-item">
               <div className="row">
-                <div className="col-lg-10 col-md-11 mx-auto">
+                <div className="col">
                   <div className="detail-box">
-                    <h1>
-                      We Provide <br />
-                      Welding Services
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis fugit, sed tempora praesentium commodi error, hic recusandae repudiandae neque ad molestias, atque veritatis labore quae eveniet autem in
-                    </p>
-                    <div className="btn-box">
-                      <Link href="/contact" className="btn1">
-                        Contact Us
-                      </Link> 
+                    <div>
+                      <h2>
+                        welcome to
+                      </h2>
+                      <h1>
+                        web agency
+                      </h1>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                      </p>
+                      <div className="">
+                        <Link href="/contact">
+                          Contact us
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
