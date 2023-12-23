@@ -8,7 +8,7 @@ import s4 from '/assets/images/s4.png'
 import s5 from '/assets/images/s5.png'
 import s6 from '/assets/images/s6.png'
 
-export default function ServiceCarousel() {
+export default function ProductCarousel() {
   const services = [
     { image: s1, title: "Moringa Leaf Powder", description: " Moringa leaf powder is rich in vitamins, minerals, and amino acids. It can be used in a variety of ways such as in smoothies, soups, and tea." },
     { image: s2, title: "Moringa Tea", description: "Made from dried Moringa leaves. It is a refreshing beverage that is also packed with antioxidants and anti-inflammatory compounds." },

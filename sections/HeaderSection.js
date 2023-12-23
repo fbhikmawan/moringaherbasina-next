@@ -22,13 +22,13 @@ export default function HeaderSection() {
                   <Link className="nav-link" href="/">Home <span className="sr-only">(current)</span></Link>
                 </li>
                 <li className="nav-item">
+                  <Link className="nav-link" href="#products">Products</Link>
+                </li>
+                <li className="nav-item">
                   <Link className="nav-link" href="#about">About</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" href="#services">Services</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" href="#team">Team</Link>
+                  <Link className="nav-link" href="#achievements">Achievements</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" href="#contact">Contact Us</Link>

@@ -37,7 +37,7 @@ export default function SliderSection() {
                         Our Moringa Leaves
                       </h1>
                       <p>
-                        We manage, produce, and sell high-quality Moringa leaves<br/>for local and export markets.
+                        We produce, manage and deliver Moringa products<br/>for local and export markets.
                       </p>
                       <div className="">
                         <Link href="/contact">
@@ -61,7 +61,7 @@ export default function SliderSection() {
                         Quality Products
                       </h1>
                       <p>
-                        We are committed to deliver the best quality<br/>Moringa leaves to our customers.
+                        We are committed to deliver the best quality<br/>Moringa products to our customers.
                       </p>
                       <div className="">
                         <Link href="/contact">
@@ -85,7 +85,7 @@ export default function SliderSection() {
                         The Broad Market
                       </h1>
                       <p>
-                        We are ready to meet the demands of the broad market,<br/>both locally and internationally.
+                        We are confidence to meet the broad market,<br/>from tea-bag until container.
                       </p>
                       <div className="">
                         <Link href="/contact">

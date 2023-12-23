@@ -416,11 +416,11 @@ a:focus {
   right: 25px;
 }
 
-.service_section .heading_container {
+.product_section .heading_container {
   margin-bottom: 35px;
 }
 
-.service_section .box {
+.product_section .box {
   margin: 10px;
   text-align: center;
   -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
@@ -441,7 +441,7 @@ a:focus {
   border-radius: 10px;
 }
 
-.service_section .box .img-box {
+.product_section .box .img-box {
   width: 65px;
   height: 65px;
   display: -webkit-box;
@@ -455,26 +455,26 @@ a:focus {
           align-items: center;
 }
 
-.service_section .box .img-box img {
+.product_section .box .img-box img {
   max-height: 100%;
   max-width: 100%;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-.service_section .box .detail-box {
+.product_section .box .detail-box {
   margin-top: 15px;
 }
 
-.service_section .box .detail-box h5 {
+.product_section .box .detail-box h5 {
   font-weight: bold;
 }
 
-.service_section .box .detail-box p {
+.product_section .box .detail-box p {
   margin: 0;
 }
 
-.service_section .btn-box {
+.product_section .btn-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,7 +484,7 @@ a:focus {
   margin-top: 45px;
 }
 
-.service_section .btn-box a {
+.product_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
   background-color: #0f5c09;
@@ -496,38 +496,38 @@ a:focus {
   border-radius: 10px;
 }
 
-.service_section .btn-box a:hover {
+.product_section .btn-box a:hover {
   background-color: transparent;
   color: #0f5c09;
 }
 
-.service_section .owl-stage .owl-item.active {
+.product_section .owl-stage .owl-item.active {
   -webkit-transform: scale(0.85);
           transform: scale(0.85);
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
 }
 
-.service_section .owl-stage .owl-item.active.center {
+.product_section .owl-stage .owl-item.active.center {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.service_section .owl-stage .owl-item.active.center .box {
+.product_section .owl-stage .owl-item.active.center .box {
   background-color: #26750b;
   color: #ffffff;
 }
 
-.service_section .owl-stage .owl-item.active.center .box .img-box img {
+.product_section .owl-stage .owl-item.active.center .box .img-box img {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
 
-.service_section .owl-nav {
+.product_section .owl-nav {
   display: none;
 }
 
-.service_section .owl-dots {
+.product_section .owl-dots {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,7 +537,7 @@ a:focus {
   margin-top: 25px;
 }
 
-.service_section .owl-dots .owl-dot {
+.product_section .owl-dots .owl-dot {
   width: 15px;
   height: 15px;
   border: none;
@@ -548,7 +548,7 @@ a:focus {
   outline: none;
 }
 
-.service_section .owl-dots .owl-dot.active {
+.product_section .owl-dots .owl-dot.active {
   background: #0f5c09;
 }
 

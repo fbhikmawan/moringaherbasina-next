@@ -1,6 +1,6 @@
 import HeaderSection from '../sections/HeaderSection'
 import SliderSection from '../sections/SliderSection'
-import ServiceSection from '../sections/ServiceSection'
+import ProductSection from '../sections/ProductSection'
 import AboutSection from '../sections/AboutSection'
 import TeamSection from '../sections/TeamSection'
 import ClientSection from '../sections/ClientSection'
@@ -13,7 +13,7 @@ export default function Home() {
         <HeaderSection />
         <SliderSection />
       </div>
-      <ServiceSection />
+      <ProductSection />
       <AboutSection />
       <TeamSection />
       <ClientSection />
