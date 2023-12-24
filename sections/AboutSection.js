@@ -4,9 +4,11 @@ import Link from 'next/link'
 
 import aboutImage from '/assets/images/about-img.jpg'
 
-export default function AboutSection() {
+export default function AboutSection({ layoutPadding }) {
+  const paddingClass = layoutPadding ? "layout_padding" : '';
+
   return (
-    <section id="about" className="about_section">
+    <section id="about" className={`about_section ${paddingClass}`}>
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-5 offset-lg-1">

@@ -5,16 +5,17 @@ import Image from 'next/image'
 
 import clientImage from '/assets/images/client.jpg'
 
-export default function TestimonialSection() {
+export default function TestimonialSection({ layoutPadding }) {
   const testimonials = [
     { image: clientImage, name: "Budi Santoso", testimonial: "The quality of Nurhadi's Moringa products is exceptional. I've seen a significant improvement in my health since I started using them." },
     { image: clientImage, name: "Siti Aminah", testimonial: "I love Nurhadi's Moringa Tea. It's refreshing and packed with nutrients. Highly recommended!" },
     { image: clientImage, name: "Agus Prakoso", testimonial: "Nurhadi's commitment to organic farming and sustainable practices is commendable. Their Moringa Oil is a staple in my skincare routine." },
     { image: clientImage, name: "Dewi Sartika", testimonial: "The Moringa Leaf Powder from Nurhadi is a game changer. It's easy to use and incredibly nutritious. I use it in my smoothies every day." },
   ];
+  const paddingClass = layoutPadding ? "layout_padding" : '';
 
   return (
-    <section className="testimonial_section layout_padding">
+    <section className={`testimonial_section ${paddingClass}`}>
       <div className="container ">
         <div className="heading_container heading_center">
           <h2>

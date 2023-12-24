@@ -2,9 +2,11 @@ import React from 'react'
 import ProductCarousel from '@/components/ProductCarousel'
 import Link from 'next/link'
 
-export default function ProductSection() {
+export default function ProductSection({ layoutPadding }) {
+  const paddingClass = layoutPadding ? "layout_padding" : '';
+
   return (
-    <section id="products" className="product_section layout_padding">
+    <section id="products" className={`product_section ${paddingClass}`}>
       <div className="container">
         <div className="heading_container heading_center ">
           <h2 className="">
@@ -18,7 +20,7 @@ export default function ProductSection() {
           <ProductCarousel />
         </div>
         <div className="btn-box">
-          <Link href="/services">
+          <Link href="/products">
             Read More
           </Link>
         </div>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function InfoSection() {
   return (
-    <section id="contact" className="info_section ">
+    <section id="info" className="info_section ">
       <div className="container">
         <div className="info_top">
           <div className="row">
