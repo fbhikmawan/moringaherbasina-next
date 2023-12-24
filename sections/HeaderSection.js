@@ -6,7 +6,7 @@ import NavBar from '/components/NavBar'
 export default function HeaderSection() {
   return (
     <header className="header_section">
-      <div className="container-fluid px-4 px-lg-5">
+      <div className="container-fluid px-3 px-lg-4 px-xl-5">
         <nav className="navbar navbar-expand-lg custom_nav-container pt-3">
           <Link className="navbar-brand" href="index.html">
             <span>

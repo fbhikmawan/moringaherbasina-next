@@ -9,7 +9,7 @@ export default function AboutSection() {
     <section id="about" className="about_section">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-5 offset-md-1">
+          <div className="col-lg-5 offset-lg-1">
             <div className="detail-box pr-md-2">
               <div className="heading_container">
                 <h2 className="">
@@ -27,7 +27,7 @@ export default function AboutSection() {
               </Link>
             </div>
           </div>
-          <div className="col-md-6 px-0">
+          <div className="col-lg-6 px-0">
             <div className="img-box ">
               <Image src={aboutImage} className="box_img" alt="About Us" placeholder="blur" />
             </div>

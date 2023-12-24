@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Achievement({ image, name, resume }) {
   return (
-    <div className="col-6 mx-auto">
+    <div className="col-12 col-md-6 mx-auto">
       <div className="box">
         <div className="img-box">
           <Image src={image} alt={name} placeholder="blur" />
