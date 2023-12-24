@@ -39,7 +39,7 @@ export default function ProductCarousel() {
     itemClass: "carousel-item-padding-40-px",
     responsive: {
       desktop: {
-        breakpoint: { min: 992 },
+        breakpoint: { max: 9999, min: 992 },
         items: 3,
       },
       tablet: {

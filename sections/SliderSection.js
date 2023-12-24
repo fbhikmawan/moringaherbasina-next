@@ -4,17 +4,6 @@ import React, { useCallback } from 'react'
 import Link from 'next/link'
 
 export default function SliderSection() {
-  const navigateCarousel = useCallback((direction) => {
-    const carouselElement = $('#carouselExampleIndicators');
-    if (carouselElement.length > 0) {
-      if (direction === 'prev') {
-        carouselElement.carousel('prev');
-      } else if (direction === 'next') {
-        carouselElement.carousel('next');
-      }
-    }
-  }, []);
-
   return (
     <section className=" slider_section position-relative">
       <div className="container-fluid">
@@ -100,11 +89,11 @@ export default function SliderSection() {
           </div>
         </div>
         <div className="carousel_btn-box">
-          <a className="carousel-control-prev" onClick={() => navigateCarousel('prev')} role="button" data-slide="prev">
+          <a className="carousel-control-prev" href="#carouselExampleIndicators" onClick={(e) => e.preventDefault()} role="button" data-slide="prev">
             <i className="fa fa-arrow-left" aria-hidden="true"></i>
             <span className="sr-only">Previous</span>
           </a> 
-          <a className="carousel-control-next" onClick={() => navigateCarousel('next')} role="button" data-slide="next">
+          <a className="carousel-control-next" href="#carouselExampleIndicators" onClick={(e) => e.preventDefault()} role="button" data-slide="next">
             <i className="fa fa-arrow-right" aria-hidden="true"></i>
             <span className="sr-only">Next</span>
           </a> 

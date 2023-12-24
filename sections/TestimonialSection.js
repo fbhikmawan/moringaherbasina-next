@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 
@@ -23,7 +25,7 @@ export default function TestimonialSection() {
         <div id="carouselExample2Controls" className="carousel slide" data-ride="carousel">
           <div className="carousel-inner">
             {testimonials.map((testimonial, index) => (
-              <div className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+              <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
                 <div className="row">
                   <div className="col-lg-7 col-md-9 mx-auto">
                     <div className="testimonial_container ">
@@ -48,13 +50,13 @@ export default function TestimonialSection() {
             ))}
           </div>
           <div className="carousel_btn-box">
-            <a className="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
+            <a className="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev" onClick={(e) => e.preventDefault()}>
               <span>
                 <i className="fa fa-arrow-left" aria-hidden="true"></i>
               </span>
               <span className="sr-only">Previous</span>
             </a>
-            <a className="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
+            <a className="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next" onClick={(e) => e.preventDefault()}>
               <span>
                 <i className="fa fa-arrow-right" aria-hidden="true"></i>
               </span>

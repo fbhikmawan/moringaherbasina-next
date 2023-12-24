@@ -8,8 +8,8 @@ export default function FooterSection() {
     <footer className="footer_section">
       <div className="container">
         <p>
-          &copy; <span id="displayYear">{currentYear}</span> All Rights Reserved By
-          <Link href="https://html.design/">Free Html Templates</Link>
+          Managed by <Link href="https://tech.asaidgroup.com/">ASAid Tech</Link><br />
+          &copy; {currentYear} All Rights Reserved.
         </p>
       </div>
     </footer>
