@@ -8,7 +8,6 @@ import '/assets/css/bootstrap.css'
 import 'jquery-nice-select/css/nice-select.css';
 import '/assets/css/font-awesome.min.css'
 import '/assets/css/style.css'
-import '/assets/css/responsive.css'
 
 const poppins = Poppins({ weight: ['400','600','700'], subsets: ['latin'] })
 
