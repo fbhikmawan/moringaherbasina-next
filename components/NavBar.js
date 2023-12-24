@@ -1,7 +1,15 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect } from 'react'
 import Link from 'next/link'
 
 export default function NavBar() {
+  useEffect(() => {
+    if (typeof window !== 'undefined' && 'SmoothScroll' in window) {
+      new window.SmoothScroll('a[href*="#"]');
+    }
+  }, []);
+
   return (
     <ul className="navbar-nav collapse">
       <li className="nav-item active">
