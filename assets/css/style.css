@@ -457,8 +457,8 @@ a:focus {
 }
 
 .product_section .box .img-box {
-  width: 65px;
-  height: 65px;
+  width: 160px;
+  height: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,9 +471,10 @@ a:focus {
 }
 
 .product_section .box .img-box img {
-  max-height: 100%;
-  max-width: 100%;
-  -webkit-transition: all .3s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   transition: all .3s;
 }
 
@@ -1124,7 +1125,7 @@ a:focus {
 
 @media screen and  (min-width: 420px) {
   .product_section .box {
-    min-height: 280px;
+    min-height: 320px;
   }
 }
 
@@ -1137,7 +1138,7 @@ a:focus {
     font-size: 24px;
   }
   .product_section .box {
-    min-height: 260px;
+    min-height: 360px;
   }
 }
 
@@ -1147,7 +1148,7 @@ a:focus {
 
 @media screen and (min-width: 768px) {
   .product_section .box {
-    min-height: 320px;
+    min-height: 400px;
   }
 }
 

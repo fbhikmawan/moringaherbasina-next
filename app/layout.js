@@ -13,13 +13,13 @@ import '/assets/css/style.css'
 const poppins = Poppins({ weight: ['400','600','700'], subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Theme Website Proposal',
-  description: 'ASAid Group Investment | Proposed Website for you, Nurhadi Isromidasa',
+  title: 'Bo Moringa',
+  description: 'Bo Moringa',
   lang: 'en',
   charset: 'utf-8',
   robots: 'noindex,nofollow',
-  keywords: 'website, theme, proposal, asaid, asaid-group, asaid group investment, nurhadi isromidasa',
-  canonical: 'https://nurhadi.asaid-group.com/',
+  keywords: 'bo moringa, moringa, moringa leaves, moringa tea-bag, moringa powder, kelor, daun kelor, teh kelor, kelor bubuk',
+  canonical: 'https://www.bomoringa.com/',
 }
 
 export const viewport = {

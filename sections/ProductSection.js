@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductCarousel from '@/components/ProductCarousel'
+import ProductList from '@/components/ProductList'
 import Link from 'next/link'
 
 export default function ProductSection({ layoutPadding, isTopPage }) {
@@ -17,7 +17,7 @@ export default function ProductSection({ layoutPadding, isTopPage }) {
           </p>
         </div>
         <div className="service_container">
-          <ProductCarousel isTopPage={isTopPage} />
+          <ProductList isTopPage={isTopPage} />
         </div>
         {isTopPage && (
           <div className="btn-box">

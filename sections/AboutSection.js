@@ -19,7 +19,7 @@ export default function AboutSection({ layoutPadding, isTopPage }) {
                 </h2>
               </div>
               <p className="detail_p_mt">
-                At Nurhadi, we are more than just a Moringa product provider - we are a team of dedicated professionals committed to bringing the best of Moringa to you. Our journey begins at the source, where we ensure the Moringa leaves are grown under optimal conditions, harvested at the right time, and processed with utmost care. </p>
+                At Bo Moringa, we are more than just a Moringa product provider - we are a team of dedicated professionals committed to bringing the best of Moringa to you. Our journey begins at the source, where we ensure the Moringa leaves are grown under optimal conditions, harvested at the right time, and processed with utmost care. </p>
               <p className="detail_p_mt">
                 We believe in the power of Moringa and are dedicated to maintaining the highest standards in every step of our production process. From careful selection of raw materials to state-of-the-art processing techniques, from rigorous quality control to thoughtful packaging, we ensure that every product we deliver is of the highest quality.</p>
               <p className="detail_p_mt">
