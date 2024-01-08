@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import aboutImage from '/assets/images/about-img.jpg'
 
-export default function AboutSection({ layoutPadding }) {
+export default function AboutSection({ layoutPadding, isTopPage }) {
   const paddingClass = layoutPadding ? "layout_padding" : '';
 
   return (
@@ -24,9 +24,12 @@ export default function AboutSection({ layoutPadding }) {
                 We believe in the power of Moringa and are dedicated to maintaining the highest standards in every step of our production process. From careful selection of raw materials to state-of-the-art processing techniques, from rigorous quality control to thoughtful packaging, we ensure that every product we deliver is of the highest quality.</p>
               <p className="detail_p_mt">
                 Trust us to bring you the best of Moringa, and experience the difference that dedication and passion can make.</p>
-              <Link href="/about" className="">
-                Read More
-              </Link>
+                
+              {isTopPage && (
+                <Link href="/about" className="">
+                  Read More
+                </Link>
+              )}
             </div>
           </div>
           <div className="col-lg-6 px-0">

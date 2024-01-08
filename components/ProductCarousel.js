@@ -13,7 +13,7 @@ import s4 from '/assets/images/s4.png'
 import s5 from '/assets/images/s5.png'
 import s6 from '/assets/images/s6.png'
 
-export default function ProductCarousel() {
+export default function ProductCarousel({ isTopPage }) {
   const services = [
     { image: s1, title: "Moringa Leaf Powder", description: " Moringa leaf powder is rich in vitamins, minerals, and amino acids. It can be used in a variety of ways such as in smoothies, soups, and tea." },
     { image: s2, title: "Moringa Tea", description: "Made from dried Moringa leaves. It is a refreshing beverage that is also packed with antioxidants and anti-inflammatory compounds." },
@@ -53,8 +53,8 @@ export default function ProductCarousel() {
     }
   }
 
-  return (
-    <div className="carousel-wrap ">
+  const renderSliderLayout = () => {
+    return (
       <Carousel {...carouselOptions}>
         {services.map((service, index) => (
           <div className="item" key={index}>
@@ -74,6 +74,36 @@ export default function ProductCarousel() {
           </div>
         ))}
       </Carousel>
+    );
+  };
+
+  const renderBreakdownLayout = () => {
+    return (
+      <ul>
+        {services.map((service, index) => (
+          <li className="item" key={index}>
+            <div className="box ">
+              <div className="img-box">
+                <Image src={service.image} alt={service.title} placeholder="blur" />
+              </div>
+              <div className="detail-box">
+                <h5>
+                  {service.title}
+                </h5>
+                <p>
+                  {service.description}
+                </p>
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    );
+  };
+
+  return (
+    <div className="carousel-wrap ">
+      {isTopPage ? renderSliderLayout() : renderBreakdownLayout()}
     </div>
   )
 }

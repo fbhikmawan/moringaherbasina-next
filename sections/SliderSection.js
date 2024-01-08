@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useCallback } from 'react'
+import React from 'react'
 import Link from 'next/link'
 
 export default function SliderSection() {
@@ -23,7 +23,7 @@ export default function SliderSection() {
                         Welcome to
                       </h2>
                       <h1>
-                        Our Moringa Leaves
+                        Bo Moringa
                       </h1>
                       <p>
                         We produce, manage and deliver Moringa products<br/>for local and export markets.

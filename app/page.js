@@ -12,9 +12,9 @@ export default function TopPage() {
         <HeaderSection isTopPage={true} />
         <SliderSection />
       </div>
-      <ProductSection layoutPadding={true} />
-      <AboutSection />
-      <AchievementSection layoutPadding={true} />
+      <ProductSection layoutPadding={true} isTopPage={true} />
+      <AboutSection isTopPage={true} />
+      <AchievementSection layoutPadding={true} isTopPage={true} />
       <TestimonialSection layoutPadding={true} />
     </>
   )

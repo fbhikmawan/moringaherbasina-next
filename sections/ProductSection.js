@@ -2,7 +2,7 @@ import React from 'react'
 import ProductCarousel from '@/components/ProductCarousel'
 import Link from 'next/link'
 
-export default function ProductSection({ layoutPadding }) {
+export default function ProductSection({ layoutPadding, isTopPage }) {
   const paddingClass = layoutPadding ? "layout_padding" : '';
 
   return (
@@ -17,13 +17,15 @@ export default function ProductSection({ layoutPadding }) {
           </p>
         </div>
         <div className="service_container">
-          <ProductCarousel />
+          <ProductCarousel isTopPage={isTopPage} />
         </div>
-        <div className="btn-box">
-          <Link href="/products">
-            Read More
-          </Link>
-        </div>
+        {isTopPage && (
+          <div className="btn-box">
+            <Link href="/products">
+              Read More
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   )

@@ -11,9 +11,9 @@ export default function HeaderSection({ isTopPage }) {
       <header className="header_section">
         <div className="container-fluid px-3 px-lg-4 px-xl-5">
           <nav className="navbar navbar-expand-lg custom_nav-container pt-3">
-            <Link className="navbar-brand" href="index.html">
+            <Link className="navbar-brand" href="/">
               <span>
-                Logo / Company Name
+                Bo Moringa
               </span>
             </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -4,15 +4,15 @@ import Link from 'next/link'
 export default function InfoSection() {
   return (
     <section id="info" className="info_section ">
-      <div className="container">
+      <div className="container ">
         <div className="info_top">
-          <div className="row">
+          <div className="row d-flex justify-content-center">
             <div className="col-md-3 ">
               <Link className="navbar-brand" href="/">
                 Logo
               </Link>
             </div>
-            <div className="col-md-5 ">
+            <div className="col-md-3 ">
               <div className="info_contact">
                 <Link href="">
                   <i className="fa fa-map-marker" aria-hidden="true"></i>
@@ -20,15 +20,9 @@ export default function InfoSection() {
                     Location
                   </span>
                 </Link>
-                <Link href="">
-                  <i className="fa fa-phone" aria-hidden="true"></i>
-                  <span>
-                    +01 1234567890
-                  </span>
-                </Link>
               </div>
             </div>
-            <div className="col-md-4 ">
+            <div className="col-md-3 ">
               <div className="social_box">
                 <Link href="">
                   <i className="fa fa-facebook" aria-hidden="true"></i>
@@ -47,45 +41,29 @@ export default function InfoSection() {
           </div>
         </div>
         <div className="info_bottom">
-          <div className="row">
-            <div className="col-lg-3 col-md-6">
+          <div className="row d-flex justify-content-center">
+            <div className="col-md-3">
               <div className="info_detail">
                 <h5>
-                  Company Name
+                  Bo Moringa
                 </h5>
                 <p>
-                  Randomised words which don't look even slightly believable. If you are going to use a passage of
-                  Lorem
-                  Ipsum, you need to be sure
+                  We produce, manage and deliver Moringa products for local and export markets.
+                  <br />We are committed to deliver the best quality Moringa products to our customers.
                 </p>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6">
-              <div className="info_form">
-                <h5>
-                  NEWSLETTER
-                </h5>
-                <form action="">
-                  <input type="text" placeholder="Enter Your Email" />
-                  <button type="submit">
-                    Subscribe
-                  </button>
-                </form>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-md-3">
               <div className="info_detail">
                 <h5>
                   Services
                 </h5>
                 <p>
-                  Randomised words which don't look even slightly believable. If you are going to use a passage of
-                  Lorem
-                  Ipsum, you need to be sure
+                  We are confidence to meet the broad market, from tea-bag until container.
                 </p>
               </div>
             </div>
-            <div className="col-lg-2 col-md-6">
+            <div className="col-md-3">
               <div className="">
                 <h5>
                   Useful links
