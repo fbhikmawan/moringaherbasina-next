@@ -1,8 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image';
 
 import NavBar from '/components/NavBar'
 import BackToTopButton from '/components/ButtonBackToTop';
+
+import logo from '/assets/images/logo.png'
 
 export default function HeaderSection({ isTopPage }) {
   return (
@@ -12,6 +15,9 @@ export default function HeaderSection({ isTopPage }) {
         <div className="container-fluid px-3 px-lg-4 px-xl-5">
           <nav className="navbar navbar-expand-lg custom_nav-container pt-3">
             <Link className="navbar-brand" href="/">
+              <div className="logo-container">
+                <Image src={logo} alt="Superfood Miracle Tree" placeholder="blur" />
+              </div>
               <span>
                 Bo Moringa
               </span>

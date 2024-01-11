@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import ProductList from '@/components/ProductList'
 import Link from 'next/link'
 
@@ -17,7 +17,9 @@ export default function ProductSection({ layoutPadding, isTopPage }) {
           </p>
         </div>
         <div className="service_container">
-          <ProductList isTopPage={isTopPage} />
+          <Suspense fallback={<div>Loading products...</div>}>
+            <ProductList isTopPage={isTopPage} />
+          </Suspense>
         </div>
         {isTopPage && (
           <div className="btn-box">

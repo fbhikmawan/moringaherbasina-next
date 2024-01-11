@@ -1,5 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image';
+
+import logo from '/assets/images/logo.png'
 
 export default function InfoSection() {
   return (
@@ -8,8 +11,8 @@ export default function InfoSection() {
         <div className="info_top">
           <div className="row d-flex justify-content-center">
             <div className="col-md-3 ">
-              <Link className="navbar-brand" href="/">
-                Logo
+              <Link className="logo-container navbar-brand" href="/">
+                <Image src={logo} alt="Superfood Miracle Tree" placeholder="blur" />
               </Link>
             </div>
             <div className="col-md-3 ">
