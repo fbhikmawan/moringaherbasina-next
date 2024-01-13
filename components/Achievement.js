@@ -6,7 +6,7 @@ export default function Achievement({ image, name, resume }) {
     <div className="col-12 col-md-6 mx-auto">
       <div className="box">
         <div className="img-box">
-          <Image src={image} alt={name} placeholder="blur" />
+          <Image src={image} alt={name} fill style={{ objectFit: 'contain' }} />
         </div>
         <div className="detail-box">
           <h5>

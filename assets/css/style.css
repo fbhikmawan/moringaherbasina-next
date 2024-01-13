@@ -430,6 +430,11 @@ a:focus {
   right: 25px;
 }
 
+.product_section .box:hover {
+  transform: scale(1.05); /* Slightly scale up the item */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
 .product_section .heading_container {
   margin-bottom: 35px;
 }
@@ -457,6 +462,7 @@ a:focus {
 }
 
 .product_section .box .img-box {
+  position: relative;
   width: 160px;
   height: 160px;
   display: -webkit-box;
@@ -468,14 +474,6 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.product_section .box .img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  transition: all .3s;
 }
 
 .product_section .box .detail-box {
@@ -560,7 +558,7 @@ a:focus {
 .about_section .img-box {
   position: relative;
   overflow: hidden;
-  height: 100%;
+  height: 500px;
 }
 
 .about_section .img-box img {
@@ -605,7 +603,9 @@ a:focus {
 }
 
 .achievement_section .box .img-box {
+  position: relative;
   width: 100%;
+  height: 400px;
 }
 
 .achievement_section .box .img-box img {
@@ -746,7 +746,9 @@ a:focus {
 }
 
 .testimonial_section .testimonial_container .img-box {
-  width: 125px;
+  position: relative;
+  width: 160px;
+  height: 160px;
 }
 
 .testimonial_section .testimonial_container .img-box img {
@@ -1123,7 +1125,7 @@ a:focus {
 }
 
 
-@media screen and  (min-width: 420px) {
+@media screen and  (min-width: 1200px) {
   .product_section .box {
     min-height: 320px;
   }
@@ -1137,9 +1139,6 @@ a:focus {
   .slider_section .detail-box p {
     font-size: 24px;
   }
-  .product_section .box {
-    min-height: 360px;
-  }
 }
 
 
@@ -1147,9 +1146,7 @@ a:focus {
 
 
 @media screen and (min-width: 768px) {
-  .product_section .box {
-    min-height: 400px;
-  }
+  
 }
 
 
@@ -1196,6 +1193,6 @@ a:focus {
 
 @media screen and  (min-width: 1300px) {
   .product_section .box {
-    min-height: 310px;
+    min-height: 360px;
   }
 }

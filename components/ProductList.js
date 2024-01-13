@@ -1,24 +1,25 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import CarouselList from '@/components/CarouselList';
 import { fetchWrapper } from '@/services/fetchWrapper';
 
-const renderSliderLayout = (services) => {
+const renderSliderLayout = (products) => {
   return (
     <CarouselList>
-      {services.map((service, index) => (
+      {products.map((product, index) => (
         <div className="item" key={index}>
           <div className="box ">
             <div className="img-box">
-              <Image src={service.image} alt={service.title} placeholder="blur" />
+              <Image src={product.images[0]} alt={product.title} fill style={{ objectFit: 'contain' }} />
             </div>
             <div className="detail-box">
               <h5>
-                {service.title}
+                {product.title}
               </h5>
               <p>
-                {service.description}
+                {product.shortDesc}
               </p>
             </div>
           </div>
@@ -28,36 +29,36 @@ const renderSliderLayout = (services) => {
   );
 };
 
-const renderBreakdownLayout = (services) => {
+const renderBreakdownLayout = (products) => {
   return (
-    <ul>
-      {services.map((service, index) => (
-        <li className="item" key={index}>
+    <div className="row justify-content-center">
+      {products.map((product, index) => (
+        <Link href={`/products/${product.slug}`} className="col-12 col-lg-6 col-xl-4 item" key={index}>
           <div className="box ">
             <div className="img-box">
-              <Image src={service.image} alt={service.title} placeholder="blur" />
+              <Image src={product.images[0]} alt={product.title} fill style={{ objectFit: 'contain' }} />
             </div>
             <div className="detail-box">
               <h5>
-                {service.title}
+                {product.title}
               </h5>
               <p>
-                {service.description}
+                {product.shortDesc}
               </p>
             </div>
           </div>
-        </li>
+        </Link>
       ))}
-    </ul>
+    </div>
   );
 };
 
 export default function ProductList({ isTopPage }) {
-  const services = fetchWrapper('/api/products');
+  const products = fetchWrapper('/api/products');
 
   return (
     <div className="carousel-wrap ">
-      {isTopPage ? renderSliderLayout(services) : renderBreakdownLayout(services)}
+      {isTopPage ? renderSliderLayout(products) : renderBreakdownLayout(products)}
     </div>
   )
 }

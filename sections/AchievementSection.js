@@ -3,17 +3,12 @@ import Link from 'next/link'
 
 import Achievement from '../components/Achievement'
 
-import t1 from '/assets/images/t1.jpg'
-import t2 from '/assets/images/t2.jpg'
-import t3 from '/assets/images/t3.jpg'
-import t4 from '/assets/images/t3.jpg'
-
 export default function AchievementSection({ layoutPadding }) {
   const achievements = [
-    { image: t1, name: "Organic Certification", resume: "Achieved organic certification for our Moringa farms, ensuring the highest quality products." },
-    { image: t2, name: "Community Outreach", resume: "Initiated a community outreach program to educate local farmers about sustainable farming practices." },
-    { image: t3, name: "Product Innovation", resume: "Launched a new line of Moringa-based health supplements, expanding our product range." },
-    { image: t4, name: "Sustainability Award", resume: "Received an award for our commitment to sustainable and environmentally friendly practices." },
+    { image: '/assets/images/t1.jpg', name: "Organic Certification", resume: "Achieved organic certification for our Moringa farms, ensuring the highest quality products." },
+    { image: '/assets/images/t2.jpg', name: "Community Outreach", resume: "Initiated a community outreach program to educate local farmers about sustainable farming practices." },
+    { image: '/assets/images/t3.jpg', name: "Product Innovation", resume: "Launched a new line of Moringa-based health supplements, expanding our product range." },
+    { image: '/assets/images/t3.jpg', name: "Sustainability Award", resume: "Received an award for our commitment to sustainable and environmentally friendly practices." },
   ];
   const paddingClass = layoutPadding ? "layout_padding" : '';
 

@@ -2,8 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import aboutImage from '/assets/images/about-img.jpg'
-
 export default function AboutSection({ layoutPadding, isTopPage }) {
   const paddingClass = layoutPadding ? "layout_padding" : '';
 
@@ -34,7 +32,7 @@ export default function AboutSection({ layoutPadding, isTopPage }) {
           </div>
           <div className="col-lg-6 px-0">
             <div className="img-box ">
-              <Image src={aboutImage} className="box_img" alt="About Us" placeholder="blur" />
+              <Image src="/assets/images/about-img.jpg" className="box_img" alt="About Us" fill style={{ objectFit: 'cover' }} />
             </div>
           </div>
         </div>

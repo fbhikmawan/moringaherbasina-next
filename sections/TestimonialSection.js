@@ -31,7 +31,7 @@ export default function TestimonialSection({ layoutPadding }) {
                   <div className="col-lg-7 col-md-9 mx-auto">
                     <div className="testimonial_container ">
                       <div className="img-box">
-                        <Image src={testimonial.image} alt="Client" placeholder="blur" />
+                        <Image src={testimonial.image} alt="Client" fill style={{ objectFit: 'contain' }} />
                       </div>
                       <div className="detail-box">
                         <h5>
