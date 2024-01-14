@@ -19,7 +19,9 @@ export default function AboutSection({ layoutPadding, isTopPage }) {
               <p className="detail_p_mt">
                 At Bo Moringa, we are more than just a Moringa product provider - we are a team of dedicated professionals committed to bringing the best of Moringa to you. Our journey begins at the source, where we ensure the Moringa leaves are grown under optimal conditions, harvested at the right time, and processed with utmost care. </p>
               <p className="detail_p_mt">
-                We believe in the power of Moringa and are dedicated to maintaining the highest standards in every step of our production process. From careful selection of raw materials to state-of-the-art processing techniques, from rigorous quality control to thoughtful packaging, we ensure that every product we deliver is of the highest quality.</p>
+                As a moringa producer in Bojonegoro, we want to provide the best moringa products to fulfill the nutrition of the Indonesian people. Starting from upstream to downstream, we apply quality standards for organic moringa cultivation and use the Nutrition Lock Drying Method. </p>
+              <p className="detail_p_mt">
+                Nutrition Lock Drying Method with controlled temperature and in a closed room so that the dried moringa leaves produced remain green, rich in nutrients and hygienic</p>
               <p className="detail_p_mt">
                 Trust us to bring you the best of Moringa, and experience the difference that dedication and passion can make.</p>
                 

@@ -25,7 +25,7 @@ export default function ProductsName({params}) {
               <div className="mb-4 text-center product-description">
                 <p className="card-text">{product.shortDesc}</p>
               </div>
-              <div className="text-center product-description">
+              <div className="product-description">
                 <p className="card-text">{product.longDesc}</p>
               </div>
             </div>
