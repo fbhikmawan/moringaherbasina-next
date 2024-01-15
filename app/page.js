@@ -13,7 +13,7 @@ export default function TopPage() {
         <SliderSection />
       </div>
       <ProductSection layoutPadding={true} isTopPage={true} />
-      <AboutSection isTopPage={true} />
+      <AboutSection isTopPage={true} layoutPadding={true} />
       <AchievementSection layoutPadding={true} isTopPage={true} />
       <TestimonialSection layoutPadding={true} />
     </>

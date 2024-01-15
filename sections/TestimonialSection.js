@@ -3,14 +3,10 @@
 import React from 'react'
 import Image from 'next/image'
 
-import clientImage from '/assets/images/client.jpg'
-
 export default function TestimonialSection({ layoutPadding }) {
   const testimonials = [
-    { image: clientImage, name: "Budi Santoso", testimonial: "The quality of Bo Moringa's products is exceptional. I've seen a significant improvement in my health since I started using them." },
-    { image: clientImage, name: "Siti Aminah", testimonial: "I love Bo Moringa Tea. It's refreshing and packed with nutrients. Highly recommended!" },
-    { image: clientImage, name: "Agus Prakoso", testimonial: "Bo Moringa's commitment to organic farming and sustainable practices is commendable. Their Moringa Oil is a staple in my skincare routine." },
-    { image: clientImage, name: "Dewi Sartika", testimonial: "The Moringa Leaf Powder from Bo Moringa is a game changer. It's easy to use and incredibly nutritious. I use it in my smoothies every day." },
+    { image: '/assets/images/devi-winda.webp', name: "Devi Winda", testimonial: "Kapsul yang sangat berkhasiat sebagai suplemen sehari-hari. Vitaminnya lengkap, warna hijaunya alami. Pokoknya konsumsi kapsul kelor Superfood bikin tubuh sehat dan segar" },
+    { image: '/assets/images/ratih-setyo-wardani.webp', name: "Ratih Setyo Wardani", testimonial: "Benar benar Superfoods, banyak sekali kegunaannya" },
   ];
   const paddingClass = layoutPadding ? "layout_padding" : '';
 

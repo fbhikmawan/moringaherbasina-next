@@ -9,7 +9,7 @@ export default function FooterSection() {
       <div className="container">
         <p>
           Managed by <Link href="https://tech.asaidgroup.com/">ASAid Tech</Link><br />
-          &copy; {currentYear} All Rights Reserved.
+          &copy; {currentYear} Bo Moringa All Rights Reserved.
         </p>
       </div>
     </footer>
