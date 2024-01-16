@@ -3,10 +3,11 @@ import Script from 'next/script'
 
 import InfoSection from '/sections/InfoSection'
 import FooterSection from '/sections/FooterSection'
+import TawkComponent from '/components/TawkComponent'
 
 import '/assets/css/globals.css'
 import '/assets/css/bootstrap.css'
-import 'jquery-nice-select/css/nice-select.css';
+import 'jquery-nice-select/css/nice-select.css'
 import '/assets/css/font-awesome.min.css'
 import '/assets/css/style.css'
 
@@ -41,22 +42,10 @@ export default function RootLayout({ children }) {
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" strategy="beforeInteractive" />
         <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" strategy="beforeInteractive" />
         
-        {/* Tawk.to Script */}
-        <Script
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-              (function(){
-              var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-              s1.async=true;
-              s1.src='https://embed.tawk.to/65a668ad8d261e1b5f53e4cb/1hk90hqr7';
-              s1.charset='UTF-8';
-              s1.setAttribute('crossorigin','*');
-              s0.parentNode.insertBefore(s1,s0);
-              })();
-            `,
-          }}
+        
+        <TawkComponent 
+          propertyId="65a668ad8d261e1b5f53e4cb" 
+          widgetId="1hk90hqr7" 
         />
       </body>
     </html>
