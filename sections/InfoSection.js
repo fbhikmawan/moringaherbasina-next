@@ -71,8 +71,8 @@ export default function InfoSection() {
                 </h5>
                 <ul className="info_menu">
                   <li>
-                    <Link href="/">
-                      Home
+                    <Link href="/products">
+                      Product
                     </Link>
                   </li>
                   <li>
@@ -81,18 +81,8 @@ export default function InfoSection() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/service">
-                      Services
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/team">
-                      Team
-                    </Link>
-                  </li>
-                  <li className="mb-0">
-                    <Link href="/contact">
-                      Contact Us
+                    <Link href="/achievements">
+                      Achievements
                     </Link>
                   </li>
                 </ul>
