@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import { fetchWrapper } from '@/services/fetchWrapper';
+import ButtonProductCTA from '@/components/ButtonProductCTA';
 
 import './style.css';
 
@@ -27,6 +28,11 @@ export default function ProductsName({params}) {
               </div>
               <div className="product-description">
                 <p className="card-text">{product.longDesc}</p>
+              </div>
+              <div className="cta btn-box">
+                <ButtonProductCTA product={product}>
+                  Contact Us for Detail
+                </ButtonProductCTA>
               </div>
             </div>
           </div>
