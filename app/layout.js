@@ -15,7 +15,6 @@ const poppins = Poppins({ weight: ['400','600','700'], subsets: ['latin'] })
 
 export const metadata = {
   title: 'Bo Moringa',
-  description: 'Bo Moringa',
   lang: 'en',
   charset: 'utf-8',
   robots: 'noindex,nofollow',

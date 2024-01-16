@@ -6,6 +6,10 @@ import AchievementSection from '/sections/AchievementSection'
 import TestimonialSection from '/sections/TestimonialSection'
 import BackToTopButton from '/components/ButtonBackToTop'
 
+export const metadata = {
+  description: 'Bo Moringa. We produce, manage and deliver Moringa products for local and export markets. We are committed to deliver the best quality Moringa products to our customers.',
+}
+
 export default function TopPage() {
   return (
     <>

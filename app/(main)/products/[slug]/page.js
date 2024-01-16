@@ -6,6 +6,17 @@ import ButtonProductCTA from '@/components/ButtonProductCTA';
 
 import './style.css';
 
+export async function generateMetadata({ params, searchParams }, parent) {
+  const previousTitle = (await parent).title?.absolute || ''
+  const products = fetchWrapper('/api/products');
+  const product = products.find(p => p.slug === params.slug);
+
+  return {
+    title: `${product.title} | ${previousTitle}`,
+    description: product.longDesc,
+  }
+}
+
 export default function ProductsName({params}) {
   const products = fetchWrapper('/api/products');
   const product = products.find(p => p.slug === params.slug);
