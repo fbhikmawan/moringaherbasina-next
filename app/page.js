@@ -4,6 +4,7 @@ import ProductSection from '/sections/ProductSection'
 import AboutSection from '/sections/AboutSection'
 import AchievementSection from '/sections/AchievementSection'
 import TestimonialSection from '/sections/TestimonialSection'
+import BackToTopButton from '/components/ButtonBackToTop'
 
 export default function TopPage() {
   return (
@@ -16,6 +17,7 @@ export default function TopPage() {
       <AboutSection isTopPage={true} layoutPadding={true} />
       <AchievementSection layoutPadding={true} isTopPage={true} />
       <TestimonialSection layoutPadding={true} />
+      <BackToTopButton />
     </>
   )
 }

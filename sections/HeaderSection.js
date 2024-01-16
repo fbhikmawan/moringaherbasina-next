@@ -3,12 +3,10 @@ import Link from 'next/link'
 import Image from 'next/image';
 
 import NavBar from '/components/NavBar'
-import BackToTopButton from '/components/ButtonBackToTop';
 
 export default function HeaderSection({ isTopPage }) {
   return (
     <>
-      <BackToTopButton />
       <header className="header_section">
         <div className="container-fluid px-3 px-lg-4 px-xl-5">
           <nav className="navbar navbar-expand-lg custom_nav-container pt-3">
