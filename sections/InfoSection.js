@@ -15,7 +15,7 @@ export default function InfoSection() {
             </div>
             <div className="col-md-3 ">
               <div className="info_contact">
-                <Link href="">
+                <Link href="/contact">
                   <i className="fa fa-map-marker" aria-hidden="true"></i>
                   <span>
                     Location
