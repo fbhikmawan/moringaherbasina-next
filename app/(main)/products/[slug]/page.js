@@ -1,14 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { fetchWrapper } from '@/services/fetchWrapper';
+import { products } from '@/components/ProductList';
 import ButtonProductCTA from '@/components/ButtonProductCTA';
 
 import './style.css';
 
 export async function generateMetadata({ params, searchParams }, parent) {
   const previousTitle = (await parent).title?.absolute || ''
-  const products = fetchWrapper('/api/products');
   const product = products.find(p => p.slug === params.slug);
 
   return {
@@ -18,7 +17,6 @@ export async function generateMetadata({ params, searchParams }, parent) {
 }
 
 export default function ProductsName({params}) {
-  const products = fetchWrapper('/api/products');
   const product = products.find(p => p.slug === params.slug);
 
   return (

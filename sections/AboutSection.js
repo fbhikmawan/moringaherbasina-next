@@ -34,7 +34,7 @@ export default function AboutSection({ layoutPadding, isTopPage }) {
           </div>
           <div className="col-lg-6 px-0">
             <div className="img-box ">
-              <Image src="/assets/images/about-us.jpg" className="box_img" alt="About Us" fill style={{ objectFit: 'cover' }} />
+              <Image src="/assets/images/about-us.webp" className="box_img" alt="About Us" fill style={{ objectFit: 'cover' }} />
             </div>
           </div>
         </div>

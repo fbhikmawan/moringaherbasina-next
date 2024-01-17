@@ -13,7 +13,7 @@ export default function HeaderSection({ isTopPage }) {
             <Link className="navbar-brand" href="/">
               <div className="logo">
                 <div className="logo-container">
-                  <Image src="/assets/images/logo.png" alt="Superfood Miracle Tree" fill style={{ objectFit: 'contain' }} />
+                  <Image src="/assets/images/logo.webp" alt="Superfood Miracle Tree" fill style={{ objectFit: 'contain' }} />
                 </div>
               </div>
               <span>

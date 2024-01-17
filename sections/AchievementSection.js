@@ -1,13 +1,12 @@
 import React from 'react'
-import Link from 'next/link'
 
 import Achievement from '../components/Achievement'
 
 export default function AchievementSection({ layoutPadding }) {
   const achievements = [
-    { image: '/assets/images/organic.jpg', name: "Organic Certification", resume: "Achieved organic certification for our Moringa farms, ensuring the highest quality products." },
-    { image: '/assets/images/community.jpg', name: "Community Outreach", resume: "Initiated a community outreach program to educate local farmers about sustainable farming practices." },
-    { image: '/assets/images/innovation.jpg', name: "Product Innovation", resume: "Launched a new line of Moringa-based health supplements, expanding our product range." },
+    { image: '/assets/images/organic.webp', name: "Organic Certification", resume: "Achieved organic certification for our Moringa farms, ensuring the highest quality products." },
+    { image: '/assets/images/community.webp', name: "Community Outreach", resume: "Initiated a community outreach program to educate local farmers about sustainable farming practices." },
+    { image: '/assets/images/innovation.webp', name: "Product Innovation", resume: "Launched a new line of Moringa-based health supplements, expanding our product range." },
     { image: '/assets/images/sustainability.jpg', name: "Sustainability Award", resume: "Received an award for our commitment to sustainable and environmentally friendly practices." },
   ];
   const paddingClass = layoutPadding ? "layout_padding" : '';

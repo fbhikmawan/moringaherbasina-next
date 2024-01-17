@@ -3,7 +3,6 @@ import Script from 'next/script'
 
 import InfoSection from '/sections/InfoSection'
 import FooterSection from '/sections/FooterSection'
-import TawkComponent from '/components/TawkComponent'
 
 import '/assets/css/globals.css'
 import '/assets/css/bootstrap.css'
@@ -40,12 +39,6 @@ export default function RootLayout({ children }) {
         <Script src="/assets/js/bootstrap.js" strategy="lazyOnload" />
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" strategy="beforeInteractive" />
         <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" strategy="beforeInteractive" />
-        
-        
-        <TawkComponent 
-          propertyId="65a668ad8d261e1b5f53e4cb" 
-          widgetId="1hk90hqr7" 
-        />
       </body>
     </html>
   )
