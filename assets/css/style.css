@@ -218,6 +218,9 @@ a:focus {
   display: flex;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
 }
 .navbar-brand span {
   font-size: 20px;
@@ -512,7 +515,7 @@ a:focus {
 }
 
 .product_section .btn-box a:hover {
-  background-color: transparent;
+  background-color: white;
   color: #0f5c09;
 }
 
@@ -585,7 +588,7 @@ a:focus {
 }
 
 .about_section .detail-box a:hover {
-  background-color: transparent;
+  background-color: white;
   color: #0f5c09;
 }
 
@@ -642,7 +645,7 @@ a:focus {
 }
 
 .achievement_section .btn-box a:hover {
-  background-color: transparent;
+  background-color: white;
   color: #0f5c09;
 }
 
@@ -853,13 +856,8 @@ a:focus {
 }
 
 .info_section .info_contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  min-width: 245px;
+  justify-content: flex-start;
 }
 
 .info_section .info_contact a {
@@ -1071,7 +1069,8 @@ a:focus {
     padding-right: 10px;
   }
 
-  .info_section .info_contact {
+  .info_section .info_contact,
+  .info_section .navbar-brand {
     margin: 15px 0;
   }
 

@@ -14,3 +14,8 @@
   border: 1px solid #0f5c09;
   border-radius: 10px;
 }
+
+.bo-btn:hover {
+  background-color: white;
+  color: #0f5c09;
+}
