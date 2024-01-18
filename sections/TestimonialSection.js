@@ -3,10 +3,13 @@
 import React from 'react'
 import Image from 'next/image'
 
+import DeviWinda from '/assets/images/devi-winda.webp'
+import RatihSetyoWardani from '/assets/images/ratih-setyo-wardani.webp'
+
 export default function TestimonialSection({ layoutPadding }) {
   const testimonials = [
-    { image: '/assets/images/devi-winda.webp', name: "Devi Winda", testimonial: "Kapsul yang sangat berkhasiat sebagai suplemen sehari-hari. Vitaminnya lengkap, warna hijaunya alami. Pokoknya konsumsi kapsul kelor Superfood bikin tubuh sehat dan segar" },
-    { image: '/assets/images/ratih-setyo-wardani.webp', name: "Ratih Setyo Wardani", testimonial: "Benar benar Superfoods, banyak sekali kegunaannya" },
+    { image: DeviWinda, name: "Devi Winda", testimonial: "Kapsul yang sangat berkhasiat sebagai suplemen sehari-hari. Vitaminnya lengkap, warna hijaunya alami. Pokoknya konsumsi kapsul kelor Superfood bikin tubuh sehat dan segar" },
+    { image: RatihSetyoWardani, name: "Ratih Setyo Wardani", testimonial: "Benar benar Superfoods, banyak sekali kegunaannya" },
   ];
   const paddingClass = layoutPadding ? "layout_padding" : '';
 

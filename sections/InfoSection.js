@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image';
+import Image from 'next/image'
+
+import Logo from '/assets/images/logo.webp'
 
 export default function InfoSection() {
   return (
@@ -10,7 +12,7 @@ export default function InfoSection() {
           <div className="row d-flex justify-content-center">
             <div className="col-md-3 ">
               <Link className="logo-container navbar-brand" href="/">
-                <Image src="/assets/images/logo.webp" alt="Superfood Miracle Tree" fill style={{ objectFit: 'contain' }} />
+                <Image src={Logo} alt="Superfood Miracle Tree" fill style={{ objectFit: 'contain' }} />
               </Link>
             </div>
             <div className="col-md-3 ">

@@ -4,6 +4,8 @@ import Image from 'next/image';
 
 import NavBar from '/components/NavBar'
 
+import Logo from '/assets/images/logo.webp'
+
 export default function HeaderSection({ isTopPage }) {
   return (
     <>
@@ -13,7 +15,7 @@ export default function HeaderSection({ isTopPage }) {
             <Link className="navbar-brand" href="/">
               <div className="logo">
                 <div className="logo-container">
-                  <Image src="/assets/images/logo.webp" alt="Superfood Miracle Tree" fill style={{ objectFit: 'contain' }} />
+                  <Image src={Logo} alt="Superfood Miracle Tree" fill style={{ objectFit: 'contain' }} />
                 </div>
               </div>
               <span>

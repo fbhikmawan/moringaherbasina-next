@@ -4,10 +4,28 @@ import Link from 'next/link';
 
 import CarouselList from '@/components/CarouselList';
 
+import DriedMoringaLeaves from '/assets/images/dried-moringa-leaves.webp'
+import MoringaInfusion  from '/assets/images/moringa-infusion.webp'
+import MoringaInfusion2 from '/assets/images/moringa-infusion-2.webp'
+import MoringaInfusion3 from '/assets/images/moringa-infusion-3.webp'
+import JarekuHerbalInfusion from '/assets/images/jareku-herbal-infusion.webp'
+import JarekuHerbalInfusion2 from '/assets/images/jareku-herbal-infusion-2.webp'
+import JarekuHerbalInfusion3 from '/assets/images/jareku-herbal-infusion-3.webp'
+import JarekuHerbalInfusion4 from '/assets/images/jareku-herbal-infusion-4.webp'
+import JarekuHerbalInfusion5 from '/assets/images/jareku-herbal-infusion-5.webp'
+import MoringaPowder from '/assets/images/moringa-powder.webp'
+import MoringaPowder2 from '/assets/images/moringa-powder-2.webp'
+import MoringaPowder3 from '/assets/images/moringa-powder-3.webp'
+import MoringaCapsule from '/assets/images/moringa-capsules.webp'
+import MoringaCapsule2 from '/assets/images/moringa-capsules-2.webp'
+import MoriChoco from '/assets/images/mori-choco.webp'
+import MoriChoco2 from '/assets/images/mori-choco-2.webp'
+import MoriChoco3 from '/assets/images/mori-choco-3.webp'
+
 export const products = [
   { 
     images: [
-      '/assets/images/dried-moringa-leaves.jpeg'
+      DriedMoringaLeaves
     ],
     slug: "dried-moringa-leaves",
     title: "Dried Moringa Leaves", 
@@ -16,9 +34,9 @@ export const products = [
   },
   { 
     images: [
-      '/assets/images/moringa-infusion.webp',
-      '/assets/images/moringa-infusion-2.webp',
-      '/assets/images/moringa-infusion-3.webp',
+      MoringaInfusion,
+      MoringaInfusion2,
+      MoringaInfusion3,
     ],
     slug: "moringa-infusion",
     title: "Moringa Infusion", 
@@ -27,9 +45,11 @@ export const products = [
   },
   { 
     images: [
-      '/assets/images/jareku-herbal-infusion.webp',
-      '/assets/images/jareku-herbal-infusion-2.webp',
-      '/assets/images/jareku-herbal-infusion-3.webp'
+      JarekuHerbalInfusion,
+      JarekuHerbalInfusion2,
+      JarekuHerbalInfusion3,
+      JarekuHerbalInfusion4,
+      JarekuHerbalInfusion5
     ],
     slug: "jareku-herbal-infusion",
     title: "Jareku Herbal Infusion",
@@ -38,7 +58,9 @@ export const products = [
   },
   { 
     images: [
-      '/assets/images/moringa-powder.jpeg'
+      MoringaPowder,
+      MoringaPowder2,
+      MoringaPowder3,
     ],
     slug: "moringa-powder",
     title: "Moringa Powder",
@@ -47,8 +69,8 @@ export const products = [
   },
   { 
     images: [
-      '/assets/images/moringa-capsules.webp',
-      '/assets/images/moringa-capsules-2.webp'
+      MoringaCapsule,
+      MoringaCapsule2
     ], 
     slug: "moringa-capsules",
     title: "Moringa Capsules",
@@ -57,8 +79,9 @@ export const products = [
   },
   { 
     images: [
-      '/assets/images/mori-choco.webp',
-      '/assets/images/mori-choco-2.webp'
+      MoriChoco,
+      MoriChoco2,
+      MoriChoco3
     ], 
     slug: "mori-choco",
     title: "Mori Choco",
