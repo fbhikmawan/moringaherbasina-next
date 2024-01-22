@@ -21,6 +21,9 @@ import MoringaCapsule2 from '/assets/images/moringa-capsules-2.webp'
 import MoriChoco from '/assets/images/mori-choco.webp'
 import MoriChoco2 from '/assets/images/mori-choco-2.webp'
 import MoriChoco3 from '/assets/images/mori-choco-3.webp'
+import Momie from '/assets/images/momie.webp'
+import Momie2 from '/assets/images/momie-2.webp'
+import MoringaSoap from '/assets/images/moringa-soap.webp'
 
 export const products = [
   { 
@@ -90,7 +93,8 @@ export const products = [
   },
   { 
     images: [
-      '/assets/images/momie.jpeg'
+      Momie,
+      Momie2
     ],
     slug: "momie",
     title: "Momie",
@@ -99,7 +103,7 @@ export const products = [
   },
   { 
     images: [
-      '/assets/images/moringa-soap.jpeg'
+      MoringaSoap
     ], 
     slug: "moringa-soap",
     title: "Moringa Soap",
