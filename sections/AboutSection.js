@@ -27,9 +27,13 @@ export default function AboutSection({ layoutPadding, isTopPage }) {
               <p className="detail_p_mt">
                 Trust us to bring you the best of Moringa, and experience the difference that dedication and passion can make.</p>
                 
-              {isTopPage && (
+              {isTopPage ? (
                 <Link href="/about" className="">
                   Read More
+                </Link>
+              ) : (
+                <Link href="/contact" className="">
+                  Reach Us
                 </Link>
               )}
             </div>
