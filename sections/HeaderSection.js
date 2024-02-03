@@ -15,11 +15,11 @@ export default function HeaderSection({ isTopPage }) {
             <Link className="navbar-brand" href="/">
               <div className="logo">
                 <div className="logo-container">
-                  <Image src={Logo} alt="Superfood Miracle Tree" fill style={{ objectFit: 'contain' }} />
+                  <Image src={Logo} alt="Superfood Miracle Tree" fill style={{ objectFit: 'contain' }} sizes="(min-width: 1024px) 50vw, (min-width: 768px) 75vw, 100vw" />
                 </div>
               </div>
               <span>
-                Bo Moringa
+                Moringa Herbasina
               </span>
             </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

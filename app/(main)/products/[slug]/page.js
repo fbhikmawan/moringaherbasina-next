@@ -1,8 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
+import { Suspense } from 'react';
 
 import { products } from '@/components/ProductList';
+import Loading from './loading';
 import ButtonProductCTA from '@/components/ButtonProductCTA';
+import DisplayOGData from '@/components/DisplayOGData';
 
 import './style.css';
 
@@ -27,8 +30,8 @@ export default function ProductsName({params}) {
             <div className="card-body">
               <div className="mb-4 text-center product-images">
                 {product.images.map((image, index) => (
-                  <div className="d-inline-block m-2 image-container">
-                    <Image key={index} src={image} alt={product.title} className="rounded the-image" fill style={{ objectFit: 'contain' }} />
+                  <div key={index} className="d-inline-block m-2 image-container">
+                    <Image src={image} alt={product.title} className="rounded the-image" fill style={{ objectFit: 'contain' }} sizes="(min-width: 1024px) 50vw, (min-width: 768px) 75vw, 100vw" />
                   </div>
                 ))}
               </div>
@@ -37,6 +40,13 @@ export default function ProductsName({params}) {
               </div>
               <div className="product-description">
                 <p className="card-text">{product.longDesc}</p>
+              </div>
+              <div className="product-links">
+                {product.productLinks.map((link, index) => (
+                  <Suspense key={index} fallback={<Loading />}>
+                    <DisplayOGData link={link} />
+                  </Suspense>
+                ))}
               </div>
               <div className="cta btn-box">
                 <ButtonProductCTA product={product}>

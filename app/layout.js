@@ -13,12 +13,12 @@ import '/assets/css/style.css'
 const poppins = Poppins({ weight: ['400','600','700'], subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Bo Moringa',
+  title: 'Moringa Herbasina',
   lang: 'en',
   charset: 'utf-8',
   robots: 'noindex,nofollow',
-  keywords: 'bo moringa, moringa, moringa leaves, moringa tea-bag, moringa powder, kelor, daun kelor, teh kelor, kelor bubuk',
-  canonical: 'https://www.bomoringa.com/',
+  keywords: 'moringa herbasina, moringa, moringa leaves, moringa tea-bag, moringa powder, kelor, daun kelor, teh kelor, kelor bubuk',
+  canonical: 'https://www.moringaherbasina.com/',
 }
 
 export const viewport = {

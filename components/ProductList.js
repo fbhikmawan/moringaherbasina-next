@@ -8,11 +8,6 @@ import DriedMoringaLeaves from '/assets/images/dried-moringa-leaves.webp'
 import MoringaInfusion  from '/assets/images/moringa-infusion.webp'
 import MoringaInfusion2 from '/assets/images/moringa-infusion-2.webp'
 import MoringaInfusion3 from '/assets/images/moringa-infusion-3.webp'
-import JarekuHerbalInfusion from '/assets/images/jareku-herbal-infusion.webp'
-import JarekuHerbalInfusion2 from '/assets/images/jareku-herbal-infusion-2.webp'
-import JarekuHerbalInfusion3 from '/assets/images/jareku-herbal-infusion-3.webp'
-import JarekuHerbalInfusion4 from '/assets/images/jareku-herbal-infusion-4.webp'
-import JarekuHerbalInfusion5 from '/assets/images/jareku-herbal-infusion-5.webp'
 import MoringaPowder from '/assets/images/moringa-powder.webp'
 import MoringaPowder2 from '/assets/images/moringa-powder-2.webp'
 import MoringaPowder3 from '/assets/images/moringa-powder-3.webp'
@@ -44,20 +39,12 @@ export const products = [
     slug: "moringa-infusion",
     title: "Moringa Infusion", 
     shortDesc: "Steep in the soothing warmth of Moringa Infusion, your tea-time companion for wellness and vitality.",
-    longDesc: "Moringa Infusion brings the ancient wisdom of moringa leaves into a convenient tea-bag, perfect for a comforting hot drink. Each sip delivers a wealth of nutrients, including antioxidants and heart-healthy compounds like quercetin. This herbal tea may help regulate blood sugar levels, provide a natural energy boost, and support cardiovascular health. Embrace the delicate flavors and therapeutic benefits of Moringa Infusion as a rejuvenating alternative to your daily brew." 
-  },
-  { 
-    images: [
-      JarekuHerbalInfusion,
-      JarekuHerbalInfusion2,
-      JarekuHerbalInfusion3,
-      JarekuHerbalInfusion4,
-      JarekuHerbalInfusion5
-    ],
-    slug: "jareku-herbal-infusion",
-    title: "Jareku Herbal Infusion",
-    shortDesc: "Discover the invigorating blend of Jareku Herbal Infusion, a perfect harmony of ginger, lemongrass, and turmeric.",
-    longDesc: "Jareku Herbal Infusion is a masterful concoction of Jahe, Sereh, and Kunyit, each known for their distinctive health benefits. Ginger offers digestive comfort and anti-inflammatory properties, lemongrass contributes a refreshing citrus note with detoxifying effects, and turmeric is celebrated for its antioxidant and anti-inflammatory qualities. Together, they create a tea that not only warms the body but also supports immune function, soothes aches, and promotes overall wellness. Enjoy the rich, earthy flavors and embrace the therapeutic qualities of this herbal blend." 
+    longDesc: "Moringa Infusion brings the ancient wisdom of moringa leaves into a convenient tea-bag, perfect for a comforting hot drink. Each sip delivers a wealth of nutrients, including antioxidants and heart-healthy compounds like quercetin. This herbal tea may help regulate blood sugar levels, provide a natural energy boost, and support cardiovascular health. Embrace the delicate flavors and therapeutic benefits of Moringa Infusion as a rejuvenating alternative to your daily brew." ,
+    productLinks: [
+      "https://tokopedia.link/upDbn8SsTGb",
+      "https://tokopedia.link/FFjVilEsTGb",
+      "https://www.detik.com"
+    ]
   },
   { 
     images: [
@@ -78,7 +65,11 @@ export const products = [
     slug: "moringa-capsules",
     title: "Moringa Capsules",
     shortDesc: "Harness the potent health benefits of Moringa Capsules, your convenient daily boost of wellness.",
-    longDesc: "Moringa Capsules encapsulate the essence of the moringa plant, offering a concentrated dose of its powerful antioxidants and anti-inflammatory agents. Known for protecting the liver, supporting the cardiovascular system, and potentially preventing cancer, these capsules are an easy and effective way to incorporate moringa's myriad health benefits into your routine. They may also aid in managing blood sugar levels, treating digestive issues, and improving bone health, making them a versatile addition to your health regimen." 
+    longDesc: "Moringa Capsules encapsulate the essence of the moringa plant, offering a concentrated dose of its powerful antioxidants and anti-inflammatory agents. Known for protecting the liver, supporting the cardiovascular system, and potentially preventing cancer, these capsules are an easy and effective way to incorporate moringa's myriad health benefits into your routine. They may also aid in managing blood sugar levels, treating digestive issues, and improving bone health, making them a versatile addition to your health regimen.",
+    productLinks: [
+      "https://shope.ee/5pjZoPZir8",
+      "https://shope.ee/lmrjU74p"
+    ]
   },
   { 
     images: [
@@ -89,7 +80,10 @@ export const products = [
     slug: "mori-choco",
     title: "Mori Choco",
     shortDesc: "Indulge in the delicious and nutritious Mori Choco, a sweet treat with a healthy twist.",
-    longDesc: "Mori Choco combines the indulgent flavor of chocolate with the nutritional powerhouse of moringa. Rich in vitamins, minerals, and antioxidants, this treat not only satisfies your sweet tooth but also provides health benefits. Its antioxidant profile, including flavonoids and phenolic acids, can contribute to heart health, improved eye health, and better digestive function. Enjoy Mori Choco as a guilt-free pleasure that supports your overall well-being" 
+    longDesc: "Mori Choco combines the indulgent flavor of chocolate with the nutritional powerhouse of moringa. Rich in vitamins, minerals, and antioxidants, this treat not only satisfies your sweet tooth but also provides health benefits. Its antioxidant profile, including flavonoids and phenolic acids, can contribute to heart health, improved eye health, and better digestive function. Enjoy Mori Choco as a guilt-free pleasure that supports your overall well-being",
+    productLinks: [
+      "https://shope.ee/6KfqPQ4ipa"
+    ]
   },
   { 
     images: [
@@ -108,7 +102,10 @@ export const products = [
     slug: "moringa-soap",
     title: "Moringa Soap",
     shortDesc: "Pamper your skin with Moringa Soap, a natural cleanser that rejuvenates and nourishes for a radiant glow.",
-    longDesc: "Moringa Soap harnesses the purifying and anti-aging properties of moringa to deliver a gentle yet effective cleansing experience. Rich in antioxidants and essential nutrients, this soap not only cleanses the skin but also helps combat premature wrinkles, promoting a youthful appearance. Its antibacterial and anti-inflammatory qualities make it ideal for soothing skin conditions and maintaining healthy, glowing skin. Indulge in the luxurious lather of Moringa Soap for a daily dose of skin-loving care" 
+    longDesc: "Moringa Soap harnesses the purifying and anti-aging properties of moringa to deliver a gentle yet effective cleansing experience. Rich in antioxidants and essential nutrients, this soap not only cleanses the skin but also helps combat premature wrinkles, promoting a youthful appearance. Its antibacterial and anti-inflammatory qualities make it ideal for soothing skin conditions and maintaining healthy, glowing skin. Indulge in the luxurious lather of Moringa Soap for a daily dose of skin-loving care" ,
+    productLinks: [
+      "https://shope.ee/9A01mfAj7R"
+    ]
   },
 ]
 
@@ -119,7 +116,7 @@ const renderSliderLayout = (products) => {
         <div className="item" key={index}>
           <div className="box ">
             <div className="img-box">
-              <Image src={product.images[0]} alt={product.title} fill style={{ objectFit: 'contain' }} />
+              <Image src={product.images[0]} alt={product.title} fill style={{ objectFit: 'contain' }} sizes="(min-width: 1024px) 50vw, (min-width: 768px) 75vw, 100vw" />
             </div>
             <div className="detail-box">
               <h5>
@@ -143,7 +140,7 @@ const renderBreakdownLayout = (products) => {
         <Link href={`/products/${product.slug}`} className="col-12 col-lg-6 col-xl-4 item" key={index}>
           <div className="box ">
             <div className="img-box">
-              <Image src={product.images[0]} alt={product.title} fill style={{ objectFit: 'contain' }} />
+              <Image src={product.images[0]} alt={product.title} fill style={{ objectFit: 'contain' }} sizes="(min-width: 1024px) 50vw, (min-width: 768px) 75vw, 100vw" />
             </div>
             <div className="detail-box">
               <h5>

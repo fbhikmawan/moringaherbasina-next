@@ -19,7 +19,7 @@ export default function AboutSection({ layoutPadding, isTopPage }) {
                 </h2>
               </div>
               <p className="detail_p_mt">
-                At Bo Moringa, we are more than just a Moringa product provider - we are a team of dedicated professionals committed to bringing the best of Moringa to you. Our journey begins at the source, where we ensure the Moringa leaves are grown under optimal conditions, harvested at the right time, and processed with utmost care. </p>
+                At Moringa Herbasina, we are more than just a Moringa product provider - we are a team of dedicated professionals committed to bringing the best of Moringa to you. Our journey begins at the source, where we ensure the Moringa leaves are grown under optimal conditions, harvested at the right time, and processed with utmost care. </p>
               <p className="detail_p_mt">
                 As a moringa producer in Bojonegoro, we want to provide the best moringa products to fulfill the nutrition of the Indonesian people. Starting from upstream to downstream, we apply quality standards for organic moringa cultivation and use the Nutrition Lock Drying Method. </p>
               <p className="detail_p_mt">
@@ -40,7 +40,7 @@ export default function AboutSection({ layoutPadding, isTopPage }) {
           </div>
           <div className="col-lg-6 px-0">
             <div className="img-box ">
-              <Image src={AboutUs} className="box_img" alt="About Us" fill style={{ objectFit: 'cover' }} />
+              <Image src={AboutUs} className="box_img" alt="About Us" fill style={{ objectFit: 'cover' }} sizes="(min-width: 1024px) 50vw, (min-width: 768px) 75vw, 100vw" />
             </div>
           </div>
         </div>

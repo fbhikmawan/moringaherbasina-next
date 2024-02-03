@@ -12,6 +12,7 @@
     "@tawk.to/tawk-messenger-react": "^2.0.2",
     "jquery-nice-select": "^1.1.0",
     "next": "14.0.4",
+    "puppeteer": "^21.11.0",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",

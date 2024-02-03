@@ -12,7 +12,7 @@ export default function InfoSection() {
           <div className="row d-flex justify-content-center">
             <div className="col-md-3 ">
               <Link className="logo-container navbar-brand" href="/">
-                <Image src={Logo} alt="Superfood Miracle Tree" fill style={{ objectFit: 'contain' }} />
+                <Image src={Logo} alt="Superfood Miracle Tree" fill style={{ objectFit: 'contain' }} sizes="(min-width: 1024px) 50vw, (min-width: 768px) 75vw, 100vw" />
               </Link>
             </div>
             <div className="col-md-3 ">
@@ -48,7 +48,7 @@ export default function InfoSection() {
             <div className="col-md-3">
               <div className="info_detail">
                 <h5>
-                  Bo Moringa
+                  Moringa Herbasina
                 </h5>
                 <p>
                   We produce, manage and deliver Moringa products for local and export markets.

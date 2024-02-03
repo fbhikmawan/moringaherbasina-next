@@ -23,7 +23,7 @@ export default function SliderSection() {
                         Welcome to
                       </h2>
                       <h1>
-                        Bo Moringa
+                        Moringa Herbasina
                       </h1>
                       <p>
                         We produce, manage and deliver Moringa products<br/>for local and export markets.
