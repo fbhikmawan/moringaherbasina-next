@@ -15,7 +15,7 @@ export default function TestimonialSection({ layoutPadding }) {
 
   return (
     <section className={`testimonial_section ${paddingClass}`}>
-      <div className="container ">
+      <div className="container-sm">
         <div className="heading_container heading_center">
           <h2>
             Testimonial

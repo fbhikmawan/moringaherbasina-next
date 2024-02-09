@@ -18,7 +18,7 @@ export default function AchievementSection({ layoutPadding }) {
 
   return (
     <section id="achievements" className={`achievement_section ${paddingClass}`}>
-      <div className="container">
+      <div className="container-sm">
         <div className="heading_container heading_center">
           <h2>
             Our Achievements

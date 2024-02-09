@@ -63,6 +63,7 @@ a,
 a:hover,
 a:focus {
   text-decoration: none;
+  color: initial;
 }
 
 a:hover,
@@ -250,7 +251,7 @@ a:focus {
   border: 1px solid white;
   border-radius: 20px;
   opacity: 0;
-  transition: all;
+  transition: opacity 0.3s ease;
 }
 .navbar-nav .nav-item:hover::after {
   opacity: 1;
@@ -444,7 +445,7 @@ a:focus {
 }
 
 .product_section .box {
-  min-height: 330px;
+  min-height: 440px;
   margin: 10px 10px 30px;
   text-align: center;
   -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
@@ -463,6 +464,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .product_section .box .img-box {
@@ -1126,9 +1128,6 @@ a:focus {
 
 
 @media screen and  (min-width: 1200px) {
-  .product_section .box {
-    min-height: 320px;
-  }
 }
 
 
@@ -1192,7 +1191,4 @@ a:focus {
 
 
 @media screen and  (min-width: 1300px) {
-  .product_section .box {
-    min-height: 360px;
-  }
 }

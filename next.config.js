@@ -7,6 +7,16 @@ const nextConfig = {
   // skipTrailingSlashRedirect: true,
   // Optional: Change the output directory `out` -> `dist`
   // distDir: 'dist',
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'down-id.img.susercontent.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
 }
 
 module.exports = nextConfig

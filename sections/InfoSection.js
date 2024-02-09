@@ -7,7 +7,7 @@ import Logo from '/assets/images/logo.webp'
 export default function InfoSection() {
   return (
     <section id="info" className="info_section ">
-      <div className="container ">
+      <div className="container-sm">
         <div className="info_top">
           <div className="row d-flex justify-content-center">
             <div className="col-md-3 ">

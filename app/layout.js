@@ -5,7 +5,7 @@ import InfoSection from '/sections/InfoSection'
 import FooterSection from '/sections/FooterSection'
 
 import '/assets/css/globals.css'
-import '/assets/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import 'jquery-nice-select/css/nice-select.css'
 import '/assets/css/font-awesome.min.css'
 import '/assets/css/style.css'

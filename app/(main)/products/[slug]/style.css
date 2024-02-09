@@ -16,17 +16,23 @@
   color: #333;
 }
 
+.product-description.short br {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .product-description.short br {
+    display: inline;
+  }
+}
 
-@media screen and  (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .image-container {
     max-width: 227px;
   }
 }
 
-@media screen and  (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .image-container {
     max-width: 275px;
   }
 }
-
-

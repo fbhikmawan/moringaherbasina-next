@@ -7,7 +7,7 @@ export default function ProductSection({ layoutPadding, isTopPage }) {
 
   return (
     <section id="products" className={`product_section ${paddingClass}`}>
-      <div className="container">
+      <div className="container-sm">
         <div className="heading_container heading_center ">
           <h2 className="">
             Discover the Power of Moringa
@@ -22,7 +22,7 @@ export default function ProductSection({ layoutPadding, isTopPage }) {
         {isTopPage && (
           <div className="btn-box">
             <Link href="/products">
-              Read More
+              See Our Complete Catalogue
             </Link>
           </div>
         )}

@@ -30,12 +30,6 @@ img {
   background-color: white;
 }
 
-
-/* PRODUCT */
-.product_section a.item {
-  color: inherit;
-}
-
 /* INFO */
 .info_section .logo-container {
   position: relative;

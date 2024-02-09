@@ -7,7 +7,7 @@ export default function FooterSection() {
 
   return (
     <footer className="footer_section">
-      <div className="container">
+      <div className="container-sm">
         <p>
           Managed by <Link href="https://tech.asaidgroup.com/">ASAid Tech</Link><br />
           &copy; {currentYear} Moringa Herbasina All Rights Reserved.

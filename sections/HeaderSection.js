@@ -27,7 +27,7 @@ export default function HeaderSection({ isTopPage }) {
             </button>
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <div className="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <div className="d-flex ms-auto flex-column flex-lg-row align-items-center">
                 <NavBar isTopPage={isTopPage} />
               </div>
             </div>
