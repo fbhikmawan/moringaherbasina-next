@@ -29,16 +29,16 @@ export default function InfoSection() {
             </div>
             <div className="col-md-3 py-3 py-md-0 ">
               <div className="social_box">
-                <Link href="">
+                <Link href="www.facebook.com" target="_blank">
                   <i className="fa fa-facebook" aria-hidden="true"></i>
                 </Link>
-                <Link href="">
+                <Link href="www.twitter.com" target="_blank">
                   <i className="fa fa-twitter" aria-hidden="true"></i>
                 </Link>
-                <Link href="">
+                <Link href="www.linkedin.com" target="_blank">
                   <i className="fa fa-linkedin" aria-hidden="true"></i>
                 </Link>
-                <Link href="">
+                <Link href="www.instagram.com" target="_blank">
                   <i className="fa fa-instagram" aria-hidden="true"></i>
                 </Link>
               </div>

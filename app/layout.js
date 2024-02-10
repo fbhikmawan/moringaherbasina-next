@@ -22,7 +22,7 @@ export const metadata = {
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
+  maximumScale: 5,
 }
 
 export default function RootLayout({ children }) {
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         {children}
         <InfoSection />
         <FooterSection />
-        
+
         <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" strategy="beforeInteractive" />
       </body>
     </html>
