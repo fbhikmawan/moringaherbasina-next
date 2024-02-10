@@ -167,7 +167,8 @@ export const products = [
     slug: "momie",
     title: "Momie",
     shortDesc: "Relish the wholesome goodness of Momie, \r\nnoodles enriched with moringa leaf extract for a healthy twist to your meals.",
-    longDesc: "Momie noodles infuse the traditional comfort of pasta with the exceptional nutritional benefits of moringa. Packed with essential amino acids, vitamins, and minerals, these noodles are a fantastic source of nourishment. The inclusion of moringa leaf extract not only enhances the flavor but also contributes to improved digestion, a boost in energy levels, and a source of antioxidants that may aid in protecting against various health ailments. Savor the unique taste and health perks with every bite of Momie." 
+    longDesc: "Momie noodles infuse the traditional comfort of pasta with the exceptional nutritional benefits of moringa. Packed with essential amino acids, vitamins, and minerals, these noodles are a fantastic source of nourishment. The inclusion of moringa leaf extract not only enhances the flavor but also contributes to improved digestion, a boost in energy levels, and a source of antioxidants that may aid in protecting against various health ailments. Savor the unique taste and health perks with every bite of Momie." ,
+    subProducts: []
   },
   { 
     images: [
@@ -175,15 +176,16 @@ export const products = [
     ], 
     slug: "moringa-soap",
     title: "Moringa Soap",
-    shortDesc: "Pamper your skin with Moringa Soap, \r\na natural cleanser that rejuvenates and nourishes for a radiant glow.",
-    longDesc: "Moringa Soap harnesses the purifying and anti-aging properties of moringa to deliver a gentle yet effective cleansing experience. Rich in antioxidants and essential nutrients, this soap not only cleanses the skin but also helps combat premature wrinkles, promoting a youthful appearance. Its antibacterial and anti-inflammatory qualities make it ideal for soothing skin conditions and maintaining healthy, glowing skin. Indulge in the luxurious lather of Moringa Soap for a daily dose of skin-loving care",
+    shortDesc: "Pamper your skin with Moringa Soap, \r\na natural cleanser that rejuvenates \r\nand nourishes for a radiant glow.",
+    longDesc: "Natural soap made from virgin coconut oil, moringa powder.\r\n\r\nBenefits:\r\n1. Softens and hydrates the skin of the face and body.\r\n2. Resolves acne.\r\n3. Prevents premature aging or wrinkles on the face.\r\n4. Nourish the skin of the face and body.",
     subProducts: [
       {
-        title: "",
-        slug: "",
+        title: "SABUN KELOR MORINGA SOAP SOAPTERAPI",
+        slug: "sabun-kelor-moringa-soap-soapterapi",
         source: "Shopee",
         images: [
-          "",
+          "https://down-id.img.susercontent.com/file/id-11134201-7qul6-lfp2q50otmzm27",
+          "https://down-id.img.susercontent.com/file/id-11134201-7qul0-lfp2ulwhe1hd86"
         ],
         description: "",
         link: "https://shope.ee/9A01mfAj7Ra"
