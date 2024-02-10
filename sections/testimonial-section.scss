@@ -43,23 +43,6 @@
       }
     }
   }
-  .carousel-control-prev {
-    right: 50%;
-    left: auto;
-
-    @include media-breakpoint-up(lg) {
-      left: 15%;
-      right: auto;
-    }
-  }
-  .carousel-control-next {
-    left: 50%;
-    right: auto;
-    @include media-breakpoint-up(lg) {
-      right: 15%;
-      left: auto;
-    }
-  }
   .carousel_btn-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -81,22 +64,33 @@
     border-radius: 0px;
     background-color: #000000;
     opacity: 1;
-    top: auto;
-    bottom: -70px;
+    top: 100px;
+    bottom: auto;
     color: #ffffff;
     font-size: 12px;
     margin: 0 2.5px;
     border-radius: 10px;
 
-    @include media-breakpoint-up(lg) {
-      top: 28%;
-      bottom: auto;
-    }
-
     &:hover {
       color: black;
       background-color: white;
       border: 1px solid black;
+    }
+  }
+  .carousel-control-prev {
+    left: 5%;
+    right: auto;
+
+    @include media-breakpoint-up(md) {
+      left: 15%;
+    }
+  }
+  .carousel-control-next {
+    right: 5%;
+    left: auto;
+
+    @include media-breakpoint-up(md) {
+      right: 15%;
     }
   }
 }

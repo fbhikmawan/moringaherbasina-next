@@ -12,13 +12,13 @@ export default function InfoSection() {
       <div className="container-sm">
         <div className="info_top">
           <div className="row d-flex justify-content-center">
-            <div className="col-md-3 ">
-              <Link className="logo-container navbar-brand" href="/">
+            <div className="col-md-3 py-3 py-md-0">
+              <Link className="logo-container navbar-brand mx-auto mx-md-0" href="/">
                 <Image src={Logo} alt="Superfood Miracle Tree" fill style={{ objectFit: 'contain' }} sizes="(min-width: 1024px) 50vw, (min-width: 768px) 75vw, 100vw" />
               </Link>
             </div>
-            <div className="col-md-3 ">
-              <div className="info_contact">
+            <div className="col-md-3 py-3 py-md-0 ">
+              <div className="info_contact justify-content-center justify-content-md-start">
                 <Link href="/contact">
                   <i className="fa fa-map-marker" aria-hidden="true"></i>
                   <span>
@@ -27,7 +27,7 @@ export default function InfoSection() {
                 </Link>
               </div>
             </div>
-            <div className="col-md-3 ">
+            <div className="col-md-3 py-3 py-md-0 ">
               <div className="social_box">
                 <Link href="">
                   <i className="fa fa-facebook" aria-hidden="true"></i>

@@ -139,7 +139,7 @@
     @include media-breakpoint-down(md) {
       top: auto;
       bottom: 0;
-      margin-top: 30px;
+      margin: 0 5px;
     }
     
     &:hover {
@@ -153,14 +153,16 @@
     left: 25px;
     
     @include media-breakpoint-down(md) {
-      left: 35%;
+      right: 50%;
+      left: auto;
     }
   }
   .carousel-control-next {
     right: 25px;
 
     @include media-breakpoint-down(md) {
-      right: 35%;
+      left: 50%;
+      right: auto;
     }
   }
 }

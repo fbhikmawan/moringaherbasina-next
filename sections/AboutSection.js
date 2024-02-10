@@ -13,7 +13,7 @@ export default function AboutSection({ layoutPadding, isTopPage }) {
     <section id="about" className={`about_section ${paddingClass}`}>
       <div className="container-fluid">
         <div className="row">
-          <div className="px-3 px-md-4 col-lg-5 offset-lg-1">
+          <div className="p-3 p-md-4 py-lg-0 col-lg-5 offset-lg-1">
             <div className="detail-box pr-md-2">
               <div className="heading_container">
                 <h2 className="">

@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 
@@ -6,9 +8,13 @@ import NavBar from '/components/NavBar'
 
 import Logo from '/assets/images/logo.webp'
 
+import { Button, Collapse } from 'react-bootstrap';
+
 import './header-section.scss'
 
 export default function HeaderSection({ isTopPage }) {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <header className="header_section">
@@ -24,15 +30,17 @@ export default function HeaderSection({ isTopPage }) {
                 Moringa Herbasina
               </span>
             </Link>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <Button onClick={() => setOpen(!open)} aria-controls="navbarSupportedContent" aria-expanded={open} className="navbar-toggler">
               <span className="navbar-toggler-icon"></span>
-            </button>
+            </Button>
 
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <div className="d-flex ms-auto flex-column flex-lg-row align-items-center">
-                <NavBar isTopPage={isTopPage} />
+            <Collapse in={open}>
+              <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <div className="d-flex ms-auto flex-column flex-lg-row align-items-center">
+                  <NavBar isTopPage={isTopPage} />
+                </div>
               </div>
-            </div>
+            </Collapse>
           </nav>
         </div>
       </header>

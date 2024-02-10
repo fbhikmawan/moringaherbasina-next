@@ -9,8 +9,6 @@ import './layout.scss'
 import 'jquery-nice-select/css/nice-select.css'
 import '/assets/css/font-awesome.min.css'
 
-import 'jquery'
-
 const poppins = Poppins({ weight: ['400','600','700'], subsets: ['latin'] })
 
 export const metadata = {
@@ -36,6 +34,7 @@ export default function RootLayout({ children }) {
         <InfoSection />
         <FooterSection />
 
+        <Script src="/assets/js/jquery-3.4.1.min.js" strategy="beforeInteractive" />
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" strategy="beforeInteractive" />
         <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" strategy="beforeInteractive" />
       </body>

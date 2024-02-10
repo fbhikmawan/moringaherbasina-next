@@ -3,6 +3,13 @@
 @import "~bootstrap/scss/mixins";
 
 .header_section {
+  .navbar-collapse{
+    margin-top: 10px;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+    }
+  }
   .header_top {
     padding: 15px 0;
     border-bottom: 1px solid #ffffff;

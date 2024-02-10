@@ -14,7 +14,12 @@
     background-color: #26750b;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 45px;
+    margin: 25px 0;
+
+    @include media-breakpoint-down(md) {
+      margin: 10px 0;
+    }
+
     .img-box {
       position: relative;
       width: 100%;

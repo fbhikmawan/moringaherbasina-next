@@ -11,6 +11,10 @@ body {
 }
 .layout_padding {
   padding: 90px 0;
+  
+  @include media-breakpoint-down(md) {
+    padding: 35px 0;
+  }
 }
 .layout_padding2 {
   padding: 75px 0;
