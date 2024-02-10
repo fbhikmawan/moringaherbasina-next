@@ -8,7 +8,12 @@ import 'jquery-nice-select/css/nice-select.css'
 import '/assets/css/font-awesome.min.css'
 import './layout.scss'
 
-const poppins = Poppins({ weight: ['400','600','700'], subsets: ['latin'] })
+const poppins = Poppins({ 
+  weight: ['400','600','700'], 
+  subsets: ['latin'],
+  display: 'swap',
+  local: ['Poppins']
+})
 
 export const metadata = {
   title: 'Moringa Herbasina',
@@ -32,8 +37,6 @@ export default function RootLayout({ children }) {
         {children}
         <InfoSection />
         <FooterSection />
-
-        <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" strategy="beforeInteractive" />
       </body>
     </html>
   )
