@@ -47,8 +47,8 @@ export default function ProductsName({params}) {
           </div>
         </div>
         <div className="cta btn-box">
-          <ButtonProductCTA product={product}>
-            Contact Us for Detail
+          <ButtonProductCTA>
+            Contact Us for Large Quantity Service
           </ButtonProductCTA>
         </div>
       </div>
