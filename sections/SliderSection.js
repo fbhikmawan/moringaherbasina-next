@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link'
 
+import ButtonProductCTA from '@/components/ButtonProductCTA';
+
 import { Carousel } from 'react-bootstrap';
 
 import './slider-section.scss'
@@ -46,10 +48,10 @@ export default function SliderSection() {
                     <p>
                       We produce, manage and deliver Moringa products<br/>for local and export markets.
                     </p>
-                    <div className="">
-                      <Link href="/contact">
+                    <div>
+                      <ButtonProductCTA>
                         Contact us
-                      </Link>
+                      </ButtonProductCTA>
                     </div>
                   </div>
                 </div>
@@ -70,10 +72,10 @@ export default function SliderSection() {
                     <p>
                       We are committed to deliver the best quality<br/>Moringa products to our customers.
                     </p>
-                    <div className="">
-                      <Link href="/contact">
+                    <div>
+                      <ButtonProductCTA>
                         Contact us
-                      </Link>
+                      </ButtonProductCTA>
                     </div>
                   </div>
                 </div>
@@ -94,10 +96,10 @@ export default function SliderSection() {
                     <p>
                       We are confidence to meet the broad market,<br/>from tea-bag until container.
                     </p>
-                    <div className="">
-                      <Link href="/contact">
+                    <div>
+                      <ButtonProductCTA>
                         Contact us
-                      </Link>
+                      </ButtonProductCTA>
                     </div>
                   </div>
                 </div>
