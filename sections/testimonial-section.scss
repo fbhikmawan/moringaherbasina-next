@@ -1,0 +1,103 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.testimonial_section {
+  .testimonial_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    .img-box {
+      position: relative;
+      width: 160px;
+      height: 160px;
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+    .detail-box {
+      margin-top: 25px;
+      h5 {
+        color: #1d1b28;
+        margin-bottom: 15px;
+      }
+      p {
+        color: #1d1b28;
+        margin: 20px;
+      }
+      span {
+        margin-top: 25px;
+        color: #1eb36a;
+        font-size: 28px;
+      }
+    }
+  }
+  .carousel-control-prev {
+    right: 50%;
+    left: auto;
+
+    @include media-breakpoint-up(lg) {
+      left: 15%;
+      right: auto;
+    }
+  }
+  .carousel-control-next {
+    left: 50%;
+    right: auto;
+    @include media-breakpoint-up(lg) {
+      right: 15%;
+      left: auto;
+    }
+  }
+  .carousel_btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    border-radius: 0px;
+    background-color: #000000;
+    opacity: 1;
+    top: auto;
+    bottom: -70px;
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0 2.5px;
+    border-radius: 10px;
+
+    @include media-breakpoint-up(lg) {
+      top: 28%;
+      bottom: auto;
+    }
+
+    &:hover {
+      color: black;
+      background-color: white;
+      border: 1px solid black;
+    }
+  }
+}
+

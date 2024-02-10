@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import TawkComponent from '/components/TawkComponent'
 
+import './footer-section.scss'
+
 export default function FooterSection() {
   const currentYear = new Date().getFullYear();
 

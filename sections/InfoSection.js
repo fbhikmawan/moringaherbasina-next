@@ -4,6 +4,8 @@ import Image from 'next/image'
 
 import Logo from '/assets/images/logo.webp'
 
+import './info-section.scss'
+
 export default function InfoSection() {
   return (
     <section id="info" className="info_section ">

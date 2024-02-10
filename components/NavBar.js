@@ -5,6 +5,8 @@ import Link from 'next/link'
 
 import { animateScroll as scroll } from 'react-scroll';
 
+import './navbar.scss'
+
 export default function NavBar({ isTopPage }) {
   useEffect(() => {
     const smoothScroll = (event) => {

@@ -1,0 +1,113 @@
+.product_section {
+  .box {
+    min-height: 440px;
+    margin: 10px 10px 30px;
+    text-align: center;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+    padding: 25px 15px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .img-box {
+      position: relative;
+      width: 160px;
+      height: 160px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    .detail-box {
+      margin-top: 15px;
+      h5 {
+        font-weight: bold;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .heading_container {
+    margin-bottom: 35px;
+  }
+  .btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 45px;
+    a {
+      display: inline-block;
+      padding: 10px 45px;
+      background-color: #0f5c09;
+      color: #ffffff;
+      border-radius: 0;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      border: 1px solid #0f5c09;
+      border-radius: 10px;
+      &:hover {
+        background-color: white;
+        color: #0f5c09;
+      }
+    }
+  }
+  .owl-stage {
+    .owl-item {
+      &.active {
+        -webkit-transform: scale(0.85);
+        transform: scale(0.85);
+        -webkit-transition: 0.6s ease;
+        transition: 0.6s ease;
+        &.center {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          .box {
+            background-color: #26750b;
+            color: #ffffff;
+            .img-box {
+              img {
+                -webkit-filter: brightness(0) invert(1);
+                filter: brightness(0) invert(1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .owl-nav {
+    display: none;
+  }
+  .react-multi-carousel-track {
+    padding: 0 0 20px;
+  }
+  .react-multi-carousel-dot--active {
+    button {
+      background: #0f5c09;
+    }
+  }
+}

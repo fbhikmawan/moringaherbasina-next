@@ -4,6 +4,8 @@ import Link from 'next/link'
 
 import AboutUs from '/assets/images/about-us.webp'
 
+import './about-section.scss'
+
 export default function AboutSection({ layoutPadding, isTopPage }) {
   const paddingClass = layoutPadding ? "layout_padding" : '';
 

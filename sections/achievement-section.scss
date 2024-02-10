@@ -1,0 +1,61 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.achievement_section {
+  .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #26750b;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 45px;
+    .img-box {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      img {
+        width: 100%;
+      }
+    }
+    .detail-box {
+      width: 100%;
+      color: #ffffff;
+      padding: 25px 15px;
+      text-align: center;
+    }
+  }
+  .btn-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 45px;
+    a {
+      display: inline-block;
+      padding: 10px 45px;
+      background-color: #0f5c09;
+      color: #ffffff;
+      border-radius: 5px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      border: 1px solid #0f5c09;
+      &:hover {
+        background-color: white;
+        color: #0f5c09;
+      }
+    }
+  }
+  .container {
+    @include media-breakpoint-up(lg) {
+      max-width: 850px;
+    }
+  }
+}

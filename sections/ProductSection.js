@@ -2,6 +2,8 @@ import React from 'react'
 import ProductList from '@/components/ProductList'
 import Link from 'next/link'
 
+import './product-section.scss'
+
 export default function ProductSection({ layoutPadding, isTopPage }) {
   const paddingClass = layoutPadding ? "layout_padding" : '';
 

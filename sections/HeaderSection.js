@@ -6,6 +6,8 @@ import NavBar from '/components/NavBar'
 
 import Logo from '/assets/images/logo.webp'
 
+import './header-section.scss'
+
 export default function HeaderSection({ isTopPage }) {
   return (
     <>

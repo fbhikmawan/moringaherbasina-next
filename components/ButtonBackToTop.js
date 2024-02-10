@@ -3,6 +3,8 @@
 import { useEffect, useState } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 
+import './back-to-top.scss'
+
 export default function BackToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
 

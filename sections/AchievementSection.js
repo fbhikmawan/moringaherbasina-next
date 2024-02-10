@@ -7,6 +7,8 @@ import Community from '/assets/images/community.webp'
 import Innovation from '/assets/images/innovation.webp'
 import Sustainability from '/assets/images/sustainability.webp'
 
+import './achievement-section.scss'
+
 export default function AchievementSection({ layoutPadding }) {
   const achievements = [
     { image: Organic, name: "Organic Certification", resume: "Achieved organic certification for our Moringa farms, ensuring the highest quality products." },
