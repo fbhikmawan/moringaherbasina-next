@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 
 import RotatingImageDisplay from '@/components/RotatingImageDisplay';
 
@@ -30,7 +31,7 @@ export default function DisplaySubProduct({ product }) {
         <a className="card-action" href={product.link}><i className="fa fa-shopping-cart"></i></a>
         <div className="card-heading">{product.title}</div>
         <div className="card-text">{product.source}</div>
-        <a href={product.link} className="card-button">Purchase</a>
+        <Link href={product.link} className="card-button" target="_blank">Purchase</Link>
       </div>
     </div>
   );

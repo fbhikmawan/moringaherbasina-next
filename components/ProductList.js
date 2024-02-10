@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 import CarouselList from '@/components/CarouselList';
@@ -30,7 +29,7 @@ export const products = [
     ],
     slug: "dried-moringa-leaves",
     title: "Dried Moringa Leaves", 
-    shortDesc: "Experience the nourishing power of Dried Moringa Leaves, rich in essential nutrients for a vibrant lifestyle.",
+    shortDesc: "Experience the nourishing power of Dried Moringa Leaves, \r\nrich in essential nutrients for a vibrant lifestyle.",
     longDesc: "Dried Moringa Leaves are a superfood marvel, loaded with a spectrum of vitamins like vitamin C and vitamin A, essential minerals, and potent antioxidants. Ideal for boosting your daily nutrient intake, these leaves support overall health, from enhancing skin radiance and immune function to promoting bone health. Their versatility allows you to easily incorporate them into your diet, whether you sprinkle them into smoothies or brew a soothing tea." ,
     subProducts: []
   },
@@ -94,7 +93,7 @@ export const products = [
     ],
     slug: "moringa-powder",
     title: "Moringa Powder",
-    shortDesc: "Energize your life with Moringa Powder, a nutrient-packed powerhouse for optimal health.",
+    shortDesc: "Energize your life with Moringa Powder, \r\na nutrient-packed powerhouse for optimal health.",
     longDesc: "Moringa Powder is a true nutritional champion, densely packed with vitamins, minerals, and amino acids essential for robust health. Its high antioxidant content, including flavonoids and polyphenols, combats oxidative stress and inflammation, which are key factors in chronic disease prevention. This versatile powder supports liver health, helps balance hormones, and may even have a positive impact on blood sugar levels and digestion. Incorporate Moringa Powder into your diet to harness the benefits of this 'miracle tree' and elevate your overall wellness." ,
     subProducts: []
   },
@@ -105,25 +104,27 @@ export const products = [
     ], 
     slug: "moringa-capsules",
     title: "Moringa Capsules",
-    shortDesc: "Harness the potent health benefits of Moringa Capsules, your convenient daily boost of wellness.",
+    shortDesc: "Harness the potent health benefits of Moringa Capsules, \r\nyour convenient daily boost of wellness.",
     longDesc: "Moringa Capsules encapsulate the essence of the moringa plant, offering a concentrated dose of its powerful antioxidants and anti-inflammatory agents. Known for protecting the liver, supporting the cardiovascular system, and potentially preventing cancer, these capsules are an easy and effective way to incorporate moringa's myriad health benefits into your routine. They may also aid in managing blood sugar levels, treating digestive issues, and improving bone health, making them a versatile addition to your health regimen.",
     subProducts: [
       {
-        title: "",
-        slug: "",
+        title: "Superfood Kapsul Daun Kelor isi 50 kapsul",
+        slug: "superfood-kapsul-daun-kelor-isi-50-kapsul",
         source: "Shopee",
         images: [
-          "",
+          "https://down-id.img.susercontent.com/file/3e024b47190c626e55e96d42c7ee646e",
+          "https://down-id.img.susercontent.com/file/f4a923eb7ebe4a5f3919515f170cbb39",
+          "https://down-id.img.susercontent.com/file/a64b8e51d4d3f56cf74dc1f98e62a6f3",
         ],
         description: "",
-        link: "https://shope.ee/7AExOjXbSp"
+        link: "https://shope.ee/5pjZoPZir8"
       },
       {
-        title: "",
-        slug: "",
+        title: "SuperFood Kapsul Daun Kelor isi 100 kapsul",
+        slug: "superFood-kapsul-daun-kelor-isi-100-kapsul",
         source: "Shopee",
         images: [
-          "",
+          "https://down-id.img.susercontent.com/file/af51bedd5dfb17eeffb035ea49a52665",
         ],
         description: "",
         link: "https://shope.ee/lmrjU74p"
@@ -138,15 +139,20 @@ export const products = [
     ], 
     slug: "mori-choco",
     title: "Mori Choco",
-    shortDesc: "Indulge in the delicious and nutritious Mori Choco, a sweet treat with a healthy twist.",
+    shortDesc: "Indulge in the delicious and nutritious Mori Choco, \r\na sweet treat with a healthy twist.",
     longDesc: "Mori Choco combines the indulgent flavor of chocolate with the nutritional powerhouse of moringa. Rich in vitamins, minerals, and antioxidants, this treat not only satisfies your sweet tooth but also provides health benefits. Its antioxidant profile, including flavonoids and phenolic acids, can contribute to heart health, improved eye health, and better digestive function. Enjoy Mori Choco as a guilt-free pleasure that supports your overall well-being",
     subProducts: [
       {
-        title: "",
-        slug: "",
+        title: "Mori Choco (Cokelat Kelor)",
+        slug: "mori-choco-cokelat-kelor",
         source: "Shopee",
         images: [
-          "",
+          "https://down-id.img.susercontent.com/file/70008f8bc39c176436385c08548fc00a",
+          "https://down-id.img.susercontent.com/file/25fa38c82cc3c84a7c80c67749756dfa",
+          "https://down-id.img.susercontent.com/file/5d744b60670f8c1bbc4942bf2f5c67da",
+          "https://down-id.img.susercontent.com/file/c87fd279117dc94f0d105afb30a82aa3",
+          "https://down-id.img.susercontent.com/file/0b82c1a616fc1694958179a6b4e8aa45",
+          "https://down-id.img.susercontent.com/file/92ec3777e9a46d4544ac4e8f0b533029",
         ],
         description: "",
         link: "https://shope.ee/6KfqPQ4ipa"
@@ -160,7 +166,7 @@ export const products = [
     ],
     slug: "momie",
     title: "Momie",
-    shortDesc: "Relish the wholesome goodness of Momie, noodles enriched with moringa leaf extract for a healthy twist to your meals.",
+    shortDesc: "Relish the wholesome goodness of Momie, \r\nnoodles enriched with moringa leaf extract for a healthy twist to your meals.",
     longDesc: "Momie noodles infuse the traditional comfort of pasta with the exceptional nutritional benefits of moringa. Packed with essential amino acids, vitamins, and minerals, these noodles are a fantastic source of nourishment. The inclusion of moringa leaf extract not only enhances the flavor but also contributes to improved digestion, a boost in energy levels, and a source of antioxidants that may aid in protecting against various health ailments. Savor the unique taste and health perks with every bite of Momie." 
   },
   { 
@@ -169,7 +175,7 @@ export const products = [
     ], 
     slug: "moringa-soap",
     title: "Moringa Soap",
-    shortDesc: "Pamper your skin with Moringa Soap, a natural cleanser that rejuvenates and nourishes for a radiant glow.",
+    shortDesc: "Pamper your skin with Moringa Soap, \r\na natural cleanser that rejuvenates and nourishes for a radiant glow.",
     longDesc: "Moringa Soap harnesses the purifying and anti-aging properties of moringa to deliver a gentle yet effective cleansing experience. Rich in antioxidants and essential nutrients, this soap not only cleanses the skin but also helps combat premature wrinkles, promoting a youthful appearance. Its antibacterial and anti-inflammatory qualities make it ideal for soothing skin conditions and maintaining healthy, glowing skin. Indulge in the luxurious lather of Moringa Soap for a daily dose of skin-loving care",
     subProducts: [
       {
