@@ -8,9 +8,9 @@ import BackToTopButton from '/components/ButtonBackToTop'
 export const metadata = {
   description: 'Moringa Herbasina. We produce, manage and deliver Moringa products for local and export markets. We are committed to deliver the best quality Moringa products to our customers.',
 }
-const TestimonialSection = dynamic(() => import('/sections/TestimonialSection'))
-const HeaderSection = dynamic(() => import('/sections/HeaderSection'))
-const SliderSection = dynamic(() => import('/sections/SliderSection'))
+const TestimonialSection = dynamic(() => import('/sections/TestimonialSection'), { ssr: false })
+const HeaderSection = dynamic(() => import('/sections/HeaderSection'), { ssr: false })
+const SliderSection = dynamic(() => import('/sections/SliderSection'), { ssr: false })
 
 export default function TopPage() {
 
