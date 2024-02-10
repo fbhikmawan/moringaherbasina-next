@@ -1,9 +1,10 @@
 import { Poppins } from 'next/font/google'
+import Script from 'next/script'
 
 import InfoSection from '/sections/InfoSection'
 import FooterSection from '/sections/FooterSection'
 
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'jquery-nice-select/css/nice-select.css'
 import '/assets/css/font-awesome.min.css'
 import './layout.scss'
 
