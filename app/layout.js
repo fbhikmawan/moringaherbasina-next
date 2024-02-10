@@ -32,9 +32,7 @@ export default function RootLayout({ children }) {
         {children}
         <InfoSection />
         <FooterSection />
-
-        <Script src="/assets/js/jquery-3.4.1.min.js" strategy="beforeInteractive" />
-        <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" strategy="beforeInteractive" />
+        
         <Script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" strategy="beforeInteractive" />
       </body>
     </html>
