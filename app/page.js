@@ -1,3 +1,5 @@
+import { Suspense } from 'react'
+
 import HeaderSection from '/sections/HeaderSection'
 import SliderSection from '/sections/SliderSection'
 import ProductSection from '/sections/ProductSection'
@@ -15,7 +17,9 @@ export default function TopPage() {
     <>
       <div id="hero" className="hero_area">
         <HeaderSection isTopPage={true} />
-        <SliderSection />
+        <Suspense>
+          <SliderSection />
+        </Suspense>
       </div>
       <ProductSection layoutPadding={true} isTopPage={true} />
       <AboutSection isTopPage={true} layoutPadding={true} />
