@@ -23,7 +23,7 @@ export default function ProductSection({ layoutPadding, isTopPage }) {
         </div>
         {isTopPage && (
           <div className="btn-box">
-            <Link href="/products">
+            <Link href="/products" prefetch={true}>
               See Our Complete Catalogue
             </Link>
           </div>

@@ -14,7 +14,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
   return {
     title: `${product.title} | ${previousTitle}`,
-    description: product.longDesc,
+    description: product.shortDesc,
   }
 }
 

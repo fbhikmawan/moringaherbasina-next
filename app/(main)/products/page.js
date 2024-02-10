@@ -7,6 +7,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
   return {
     title: `Products | ${previousTitle}`,
+    description: `We produce various moringa based products`,
   }
 }
 

@@ -13,13 +13,13 @@ export default function InfoSection() {
         <div className="info_top">
           <div className="row d-flex justify-content-center">
             <div className="col-md-3 py-3 py-md-0">
-              <Link className="logo-container navbar-brand mx-auto mx-md-0" href="/">
+              <Link className="logo-container navbar-brand mx-auto mx-md-0" href="/" prefetch={true}>
                 <Image src={Logo} alt="Superfood Miracle Tree" fill style={{ objectFit: 'contain' }} sizes="(min-width: 1024px) 50vw, (min-width: 768px) 75vw, 100vw" />
               </Link>
             </div>
             <div className="col-md-3 py-3 py-md-0 ">
               <div className="info_contact justify-content-center justify-content-md-start">
-                <Link href="/contact">
+                <Link href="/contact" prefetch={true}>
                   <i className="fa fa-map-marker" aria-hidden="true"></i>
                   <span>
                     Location
@@ -75,17 +75,17 @@ export default function InfoSection() {
                 </h5>
                 <ul className="info_menu">
                   <li>
-                    <Link href="/products">
+                    <Link href="/products" prefetch={true}>
                       Product
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about">
+                    <Link href="/about" prefetch={true}>
                       About
                     </Link>
                   </li>
                   <li>
-                    <Link href="/achievements">
+                    <Link href="/achievements" prefetch={true}>
                       Achievements
                     </Link>
                   </li>

@@ -30,11 +30,11 @@ export default function AboutSection({ layoutPadding, isTopPage }) {
                 Trust us to bring you the best of Moringa, and experience the difference that dedication and passion can make.</p>
                 
               {isTopPage ? (
-                <Link href="/about" className="">
+                <Link href="/about" prefetch={true}>
                   Read More
                 </Link>
               ) : (
-                <Link href="/contact" className="">
+                <Link href="/contact" prefetch={true}>
                   Reach Us
                 </Link>
               )}

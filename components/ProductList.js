@@ -199,7 +199,7 @@ const renderSliderLayout = (products) => {
     <CarouselList>
       {products.map((product, index) => (
         <div className="item" key={index}>
-          <Link className="box " href={`/products/${product.slug}`}>
+          <Link className="box " href={`/products/${product.slug}`} prefetch={true}>
             <RotatingImageDisplay images={product.images} />
             <div className="detail-box">
               <h5>
@@ -220,7 +220,7 @@ const renderBreakdownLayout = (products) => {
   return (
     <div className="row justify-content-center">
       {products.map((product, index) => (
-        <Link href={`/products/${product.slug}`} className="col-12 col-lg-6 col-xl-4 item" key={index}>
+        <Link href={`/products/${product.slug}`} className="col-12 col-lg-6 col-xl-4 item" key={index} prefetch={true}>
           <div className="box ">
             <RotatingImageDisplay images={product.images} />
             <div className="detail-box">

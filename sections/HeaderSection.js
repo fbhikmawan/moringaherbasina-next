@@ -20,7 +20,7 @@ export default function HeaderSection({ isTopPage }) {
       <header className="header_section">
         <div className="container-fluid px-3 px-lg-4 px-xl-5">
           <nav className="navbar navbar-expand-lg custom_nav-container pt-3">
-            <Link className="navbar-brand" href="/">
+            <Link className="navbar-brand" href="/" prefetch={true}>
               <div className="logo">
                 <div className="logo-container">
                   <Image src={Logo} alt="Superfood Miracle Tree" fill style={{ objectFit: 'contain' }} sizes="(min-width: 1024px) 50vw, (min-width: 768px) 75vw, 100vw" />

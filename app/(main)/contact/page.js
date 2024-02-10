@@ -4,6 +4,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
   const previousTitle = (await parent).title?.absolute || ''
   return {
     title: `Reach Us | ${previousTitle}`,
+    description: `Jl. Waduk Sonorejo, Dusun Budengan. RT. 08 Rw. 03 Kec. Padangan. Kabupaten Bojonegoro, Jawa Timur, Indonesia`,
   }
 }
 
