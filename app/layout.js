@@ -4,10 +4,9 @@ import Script from 'next/script'
 import InfoSection from '/sections/InfoSection'
 import FooterSection from '/sections/FooterSection'
 
-import '/assets/css/globals.css'
-import './layout.scss'
 import 'jquery-nice-select/css/nice-select.css'
 import '/assets/css/font-awesome.min.css'
+import './layout.scss'
 
 const poppins = Poppins({ weight: ['400','600','700'], subsets: ['latin'] })
 
