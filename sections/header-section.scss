@@ -4,10 +4,13 @@
 
 .header_section {
   .navbar-collapse{
-    margin-top: 10px;
+    margin-top: 0;
 
-    @include media-breakpoint-up(lg) {
-      margin-top: 0;
+    @include media-breakpoint-down(lg) {
+      position: absolute;
+      width: 100%;
+      bottom: -240px;
+      background-color: #0f5c09;
     }
   }
   .header_top {
@@ -160,6 +163,10 @@
   }
   .navbar-toggler {
     outline: none;
+    &:hover {
+      background-color: #0f5c09;
+      border-color: #0f5c09;
+    }
     .navbar-toggler-icon {
       background-image: url(../assets/images/menu.webp);
       background-size: 55px;
