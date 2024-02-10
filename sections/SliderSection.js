@@ -33,7 +33,7 @@ export default function SliderSection() {
   return (
     <section className="slider_section position-relative">
       <div className="container-fluid">
-        <Carousel wrap={true} controls={true} slide={true} indicators={false} interval={2000} prevIcon={prevIcon} nextIcon={nextIcon} onSelect={handleSelect} activeIndex={index} >
+        <Carousel touch={true} wrap={true} controls={true} slide={true} indicators={false} interval={2000} prevIcon={prevIcon} nextIcon={nextIcon} onSelect={handleSelect} activeIndex={index} >
           <Carousel.Item>
             <div className="row">
               <div className="col">
