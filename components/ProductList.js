@@ -161,17 +161,6 @@ export const products = [
   },
   { 
     images: [
-      Momie,
-      Momie2
-    ],
-    slug: "momie",
-    title: "Momie",
-    shortDesc: "Relish the wholesome goodness of Momie, \r\nnoodles enriched with moringa leaf extract for a healthy twist to your meals.",
-    longDesc: "Momie noodles infuse the traditional comfort of pasta with the exceptional nutritional benefits of moringa. Packed with essential amino acids, vitamins, and minerals, these noodles are a fantastic source of nourishment. The inclusion of moringa leaf extract not only enhances the flavor but also contributes to improved digestion, a boost in energy levels, and a source of antioxidants that may aid in protecting against various health ailments. Savor the unique taste and health perks with every bite of Momie." ,
-    subProducts: []
-  },
-  { 
-    images: [
       MoringaSoap
     ], 
     slug: "moringa-soap",
