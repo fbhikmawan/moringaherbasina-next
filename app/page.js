@@ -21,9 +21,7 @@ export default function TopPage() {
       <ProductSection layoutPadding={true} isTopPage={true} />
       <AboutSection isTopPage={true} layoutPadding={true} />
       <AchievementSection layoutPadding={true} isTopPage={true} />
-      <Suspense>
-        <TestimonialSection layoutPadding={true} />
-      </Suspense>
+      <TestimonialSection layoutPadding={true} />
       <BackToTopButton />
     </>
   )
