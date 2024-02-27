@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import Achievement from '../components/Achievement'
+import Achievement from "../components/Achievement";
 
-import Organic from '/assets/images/organic.webp'
-import Community from '/assets/images/community.webp'
-import Innovation from '/assets/images/innovation.webp'
-import Sustainability from '/assets/images/sustainability.webp'
+import Organic from "/assets/images/organic.webp";
+import Community from "/assets/images/community.webp";
+import Innovation from "/assets/images/innovation.webp";
+import Sustainability from "/assets/images/sustainability.webp";
 
-import './achievement-section.scss'
+import "./achievement-section.scss";
 
 export default function AchievementSection({ layoutPadding }) {
   const achievements = [
@@ -16,17 +16,15 @@ export default function AchievementSection({ layoutPadding }) {
     { image: Innovation, name: "Product Innovation", resume: "Launched a new line of Moringa-based health supplements, expanding our product range." },
     { image: Sustainability, name: "Sustainability Award", resume: "Received an award for our commitment to sustainable and environmentally friendly practices." },
   ];
-  const paddingClass = layoutPadding ? "layout_padding" : '';
+  const paddingClass = layoutPadding ? "layout_padding" : "";
 
   return (
     <section id="achievements" className={`achievement_section ${paddingClass}`}>
       <div className="container-sm">
         <div className="heading_container heading_center">
-          <h2>
-            Our Achievements
-          </h2>
+          <h2>Our Achievements</h2>
           <p>
-            We're proud of the work we've done and the milestones we've achieved. <br/>
+            We're proud of the work we've done and the milestones we've achieved. <br />
             Here are some of our key achievements and activities.
           </p>
         </div>
@@ -37,5 +35,5 @@ export default function AchievementSection({ layoutPadding }) {
         </div>
       </div>
     </section>
-  )
+  );
 }
