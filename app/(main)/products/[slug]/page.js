@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 
 import { products } from '@/components/ProductList';
 import { renderLineBreaks } from '@/services/utilities'
@@ -11,6 +12,13 @@ import './style.css';
 export async function generateMetadata({ params, searchParams }, parent) {
   const previousTitle = (await parent).title?.absolute || ''
   const product = products.find(p => p.slug === params.slug);
+  
+  if (!product) {
+    return {
+      title: `Product Not Found | ${previousTitle}`,
+      description: `Product ${params.slug} is not Found`,
+    }
+  }
 
   return {
     title: `${product.title} | ${previousTitle}`,
@@ -20,6 +28,10 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
 export default function ProductsName({params}) {
   const product = products.find(p => p.slug === params.slug);
+
+  if (!product) {
+    return notFound();
+  }
 
   return (
     <div className="px-4 py-5">
