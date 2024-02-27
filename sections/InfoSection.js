@@ -28,7 +28,7 @@ export default function InfoSection() {
               </div>
             </div>
             <div className="col-md-3 py-3 py-md-0 ">
-              <div className="social_box justify-content-center">
+              <div className="social_box justify-content-center justify-content-lg-start">
                 <Link href="http://www.facebook.com" target="_blank">
                   <i className="fa fa-facebook" aria-hidden="true"></i>
                 </Link>
@@ -71,7 +71,7 @@ export default function InfoSection() {
             <div className="col-md-3">
               <div className="">
                 <h5>
-                  Useful links
+                  Links
                 </h5>
                 <ul className="info_menu">
                   <li>
