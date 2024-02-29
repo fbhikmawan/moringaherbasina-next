@@ -1,0 +1,59 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Define variables for colors and fonts
+$primary-color: #333;
+$secondary-color: #666;
+$container-padding: 20px;
+$certification-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$certification-border-radius: 10px;
+$certification-margin: 20px;
+$certification-padding: 20px;
+$certification-width: calc(50% - 140px);
+
+.title {
+    font-size: 2.5em;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: $certification-margin;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: $secondary-color;
+    text-align: center;
+    margin-bottom: $certification-margin * 2;
+}
+
+.certifications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.certification {
+    background-color: #fff;
+    border-radius: $certification-border-radius;
+    box-shadow: $certification-box-shadow;
+    margin: $certification-margin;
+    padding: $certification-padding;
+    width: $certification-width;
+    
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+    }
+
+    &-name {
+        font-size: 1.5em;
+        color: $primary-color;
+        margin-bottom: $certification-margin / 2;
+    }
+
+    &-details {
+        font-size: 1em;
+        color: $secondary-color;
+        margin-bottom: $certification-margin / 2;
+    }
+}
+
