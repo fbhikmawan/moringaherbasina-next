@@ -12,9 +12,7 @@ export default function Achievement({ image, name, resume }) {
           <h5>
             {name}
           </h5>
-          <h6 className="">
-            {resume}
-          </h6>
+          <h6 dangerouslySetInnerHTML={{ __html: resume }}></h6>
         </div>
       </div>
     </div>
