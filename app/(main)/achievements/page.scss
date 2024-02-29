@@ -33,7 +33,7 @@ $certification-width: calc(50% - 140px);
 }
 
 .certification {
-    background-color: #fff;
+    background-color: #dedede;
     border-radius: $certification-border-radius;
     box-shadow: $certification-box-shadow;
     margin: $certification-margin;
@@ -55,5 +55,11 @@ $certification-width: calc(50% - 140px);
         color: $secondary-color;
         margin-bottom: $certification-margin / 2;
     }
+}
+
+.image-gallery-left-nav .image-gallery-svg, 
+.image-gallery-right-nav .image-gallery-svg {
+    height: 90px !important;
+    width: 45px !important;
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link'
 
 import Achievement from "../components/Achievement";
 
@@ -32,6 +33,13 @@ export default function AchievementSection({ layoutPadding }) {
           {achievements.map((achieve, index) => (
             <Achievement key={index} image={achieve.image} name={achieve.name} resume={achieve.resume} />
           ))}
+        </div>
+        <div className="row justify-content-center">
+          <div className="btn-box">
+            <Link href="/achievements" prefetch={true} className="mx-2">
+              Follow Our Journeys
+            </Link>
+          </div>
         </div>
       </div>
     </section>

@@ -54,7 +54,7 @@ export default function InfoSection() {
                 </h5>
                 <p>
                   We produce, manage and deliver Moringa products for local and export markets.
-                  <br />We are committed to deliver the best quality Moringa products to our customers.
+                  <br className="pc-only" />We are committed to deliver the best quality Moringa products to our customers.
                 </p>
               </div>
             </div>

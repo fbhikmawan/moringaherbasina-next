@@ -45,7 +45,7 @@ export default function SliderSection() {
                       Moringa Herbasina
                     </h1>
                     <p>
-                      We produce, manage and deliver Moringa products<br/>for local and export markets.
+                      We produce, manage and deliver Moringa products<br className="pc-only"/>for local and export markets.
                     </p>
                     <div>
                       <ButtonProductCTA>
@@ -69,7 +69,7 @@ export default function SliderSection() {
                       Quality Products
                     </h1>
                     <p>
-                      We are committed to deliver the best quality<br/>Moringa products to our customers.
+                      We are committed to deliver the best quality<br className="pc-only"/>Moringa products to our customers.
                     </p>
                     <div>
                       <ButtonProductCTA>
@@ -93,7 +93,7 @@ export default function SliderSection() {
                       The Broad Market
                     </h1>
                     <p>
-                      We are confidence to meet the broad market,<br/>from tea-bag until container.
+                      We are confidence to meet the broad market,<br className="pc-only"/>from tea-bag until container.
                     </p>
                     <div>
                       <ButtonProductCTA>

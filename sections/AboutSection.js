@@ -34,9 +34,14 @@ export default function AboutSection({ layoutPadding, isTopPage }) {
                   Read More
                 </Link>
               ) : (
-                <Link href="/contact" prefetch={true}>
-                  Reach Us
-                </Link>
+                <>
+                  <Link href="/contact" prefetch={true} className="mx-2">
+                    Reach Us
+                  </Link>
+                  <Link href="/achievements" prefetch={true} className="mx-2">
+                    Follow Our Journeys
+                  </Link>
+                </>
               )}
             </div>
           </div>
