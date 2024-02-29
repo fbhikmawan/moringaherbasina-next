@@ -1,9 +1,6 @@
 import React from "react";
-import { Card, CardDeck } from "react-bootstrap";
 
 import AboutSection from "/sections/AboutSection";
-
-import Organic from '/assets/images/organic.webp'
 
 export async function generateMetadata({ params, searchParams }, parent) {
   const previousTitle = (await parent).title?.absolute || "";
