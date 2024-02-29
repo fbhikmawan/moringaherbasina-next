@@ -56,6 +56,25 @@ body {
     align-items: center;
     text-align: center;
   }
+  h2::before, 
+  h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 1px;
+    background-color: #fec016;
+  }
+  h2::before {
+    left: -10px;
+    -webkit-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
+  }
+  h2::after {
+    right: -10px;
+    -webkit-transform: translate(100%, 50%);
+    transform: translate(100%, 50%);
+  }
 }
 a,
 a:hover,

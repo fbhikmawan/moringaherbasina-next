@@ -11,7 +11,7 @@ export default function FooterSection() {
     <footer className="footer_section">
       <div className="container-sm">
         <p>
-          Managed by <Link href="https://tech.asaidgroup.com/" target="_blank">ASAid Tech</Link><br />
+          Managed by <Link href="https://www.asaidgroup.com/" target="_blank">ASAid</Link><br />
           &copy; {currentYear} Moringa Herbasina All Rights Reserved.
         </p>
       </div>
