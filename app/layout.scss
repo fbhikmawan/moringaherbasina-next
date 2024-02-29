@@ -138,6 +138,20 @@ img {
   }
 }
 
+.pc-only,
+.dn-sp {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.sp-only,
+.dn-pc {
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
 /* INFO */
 .info_section .logo-container {
   position: relative;
