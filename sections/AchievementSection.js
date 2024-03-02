@@ -5,7 +5,7 @@ import Achievement from "../components/Achievement";
 
 import Certification from "/assets/images/certification.webp";
 import Community from "/public/assets/images//activities/dharma-wanita/dharma-wanita-2.webp";
-import Innovation from "/assets/images/innovation.webp";
+import Innovation from "/assets/images/moringa-products.webp";
 import CSR from "/public/assets/images/activities/smkn-ngasem/smkn-ngasem-2.webp";
 
 import "./achievement-section.scss";
