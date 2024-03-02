@@ -14,10 +14,6 @@ export async function generateMetadata({ params, searchParams }, parent) {
     openGraph: {
       images: ['/assets/images/logo.webp'],
     },
-    twitter: {
-      card: 'summary_large_image',
-      images: ['/assets/images/logo.webp'],
-    },
   }
 }
 

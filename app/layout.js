@@ -16,7 +16,7 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://www.moringaherbasina.com'),
+  metadataBase: new URL('https://nurhadi.asaidgroup.com'),
   title: 'Moringa Herbasina',
   lang: 'en',
   charset: 'utf-8',
