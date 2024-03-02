@@ -6,8 +6,19 @@ import AboutSection from '/sections/AboutSection'
 import AchievementSection from '/sections/AchievementSection'
 import BackToTopButton from '/components/ButtonBackToTop'
 
-export const metadata = {
-  description: 'Moringa Herbasina. We produce, manage and deliver Moringa products for local and export markets. We are committed to deliver the best quality Moringa products to our customers.',
+export async function generateMetadata({ params, searchParams }, parent) { 
+  const description_text = 'Moringa Herbasina. We produce, manage and deliver Moringa products for local and export markets. We are committed to deliver the best quality Moringa products to our customers.';
+
+  return {
+    description: description_text,
+    openGraph: {
+      images: ['/assets/images/logo.webp'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      images: ['/assets/images/logo.webp'],
+    },
+  }
 }
 
 export default function TopPage() {

@@ -15,23 +15,23 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
 export default function AchievementsPage() {
   const actDharmaWanita = [
-    { url: "assets/images/activities/dharma-wanita/dharma-wanita-1.webp", description: "Kunjungan Dharma Wanita" },
-    { url: "assets/images/activities/dharma-wanita/dharma-wanita-2.webp", description: "Kunjungan Dharma Wanita" },
-    { url: "assets/images/activities/dharma-wanita/dharma-wanita-3.webp", description: "Kunjungan Dharma Wanita" },
-    { url: "assets/images/activities/dharma-wanita/dharma-wanita-4.webp", description: "Kunjungan Dharma Wanita" },
+    { url: "assets/images/activities/dharma-wanita/dharma-wanita-1.webp", description: "Training for Dharma Wanita" },
+    { url: "assets/images/activities/dharma-wanita/dharma-wanita-2.webp", description: "Training for Dharma Wanita" },
+    { url: "assets/images/activities/dharma-wanita/dharma-wanita-3.webp", description: "Training for Dharma Wanita" },
+    { url: "assets/images/activities/dharma-wanita/dharma-wanita-4.webp", description: "Training for Dharma Wanita" },
   ];
   const actDisperinaker = [
-    { url: "assets/images/activities/disperinaker/disperinaker-1.webp", description: "Kunjungan Ibu PJ Bupati Bojonegoro & Disperinaker" },
-    { url: "assets/images/activities/disperinaker/disperinaker-2.webp", description: "Kunjungan Ibu PJ Bupati Bojonegoro & Disperinaker" },
-    { url: "assets/images/activities/disperinaker/disperinaker-3.webp", description: "Kunjungan Ibu PJ Bupati Bojonegoro & Disperinaker" },
-    { url: "assets/images/activities/disperinaker/disperinaker-4.webp", description: "Kunjungan Ibu PJ Bupati Bojonegoro & Disperinaker" },
-    { url: "assets/images/activities/disperinaker/disperinaker-5.webp", description: "Kunjungan Ibu PJ Bupati Bojonegoro & Disperinaker" },
+    { url: "assets/images/activities/disperinaker/disperinaker-1.webp", description: "Visit from Local Governance" },
+    { url: "assets/images/activities/disperinaker/disperinaker-2.webp", description: "Visit from Local Governance" },
+    { url: "assets/images/activities/disperinaker/disperinaker-3.webp", description: "Visit from Local Governance" },
+    { url: "assets/images/activities/disperinaker/disperinaker-4.webp", description: "Visit from Local Governance" },
+    { url: "assets/images/activities/disperinaker/disperinaker-5.webp", description: "Visit from Local Governance" },
   ];
   const actSMKNngasem = [
-    { url: "assets/images/activities/smkn-ngasem/smkn-ngasem-1.webp", description: "Kunjungan SMKN Ngasem" },
-    { url: "assets/images/activities/smkn-ngasem/smkn-ngasem-2.webp", description: "Kunjungan SMKN Ngasem" },
-    { url: "assets/images/activities/smkn-ngasem/smkn-ngasem-3.webp", description: "Kunjungan SMKN Ngasem" },
-    { url: "assets/images/activities/smkn-ngasem/smkn-ngasem-4.webp", description: "Kunjungan SMKN Ngasem" },
+    { url: "assets/images/activities/smkn-ngasem/smkn-ngasem-1.webp", description: "SMKN Ngasem Internship Program" },
+    { url: "assets/images/activities/smkn-ngasem/smkn-ngasem-2.webp", description: "SMKN Ngasem Internship Program" },
+    { url: "assets/images/activities/smkn-ngasem/smkn-ngasem-3.webp", description: "SMKN Ngasem Internship Program" },
+    { url: "assets/images/activities/smkn-ngasem/smkn-ngasem-4.webp", description: "SMKN Ngasem Internship Program" },
   ];
   const workshops = [
     { url: "/assets/images/workshops/workshop-pbp.webp", description: "Magang Budidaya dan Pengolahan Tanaman Kelor Moringa Organik Indonesia" },
