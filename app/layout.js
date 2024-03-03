@@ -1,28 +1,46 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { Poppins } from 'next/font/google'
+import Script from 'next/script'
 
-const inter = Inter({ subsets: ['latin'] })
+import InfoSection from '/sections/InfoSection'
+import FooterSection from '/sections/FooterSection'
+
+import 'jquery-nice-select/css/nice-select.css'
+import '/assets/css/font-awesome.min.css'
+import './layout.scss'
+
+const poppins = Poppins({ 
+  weight: ['400','600','700'], 
+  subsets: ['latin'],
+  display: 'swap',
+  local: ['Poppins']
+})
 
 export const metadata = {
-  title: 'Theme Website Proposal',
-  description: 'ASAid Group Investment | Proposed Website for you, Nurhadi Isromidasa',
+  metadataBase: new URL('https://nurhadi.asaidgroup.com'),
+  title: 'Moringa Herbasina',
   lang: 'en',
   charset: 'utf-8',
   robots: 'noindex,nofollow',
-  keywords: 'website, theme, proposal, asaid, asaid-group, asaid group investment, nurhadi isromidasa',
-  canonical: 'https://nurhadi.asaid-group.com/',
+  keywords: 'moringa herbasina, moringa, moringa leaves, moringa tea-bag, moringa powder, kelor, daun kelor, teh kelor, kelor bubuk',
+  alternates: {
+    canonical: '/',
+  },
 }
 
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
+  maximumScale: 5,
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>
+        {children}
+        <InfoSection />
+        <FooterSection />
+      </body>
     </html>
   )
 }

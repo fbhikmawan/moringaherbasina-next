@@ -1,34 +1,35 @@
-import Link from "next/link";
+import SliderSection from '/sections/SliderSection'
+import TestimonialSection from '/sections/TestimonialSection'
+import HeaderSection from '/sections/HeaderSection'
+import ProductSection from '/sections/ProductSection'
+import AboutSection from '/sections/AboutSection'
+import AchievementSection from '/sections/AchievementSection'
+import BackToTopButton from '/components/ButtonBackToTop'
 
-export default function Home() {
+export async function generateMetadata({ params, searchParams }, parent) { 
+  const description_text = 'Moringa Herbasina. We produce, manage and deliver Moringa products for local and export markets. We are committed to deliver the best quality Moringa products to our customers.';
+
+  return {
+    description: description_text,
+    openGraph: {
+      images: ['/assets/images/logo.webp'],
+    },
+  }
+}
+
+export default function TopPage() {
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-cover background-animation">
-      <div className="space-y-4">
-        <Link href="/theme-1/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 1
-        </Link>
-        <Link href="/theme-2/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 2
-        </Link>
-        <Link href="/theme-3/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 3
-        </Link>
-        <Link href="/theme-4/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 4
-        </Link>
-        <Link href="/theme-5/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 5
-        </Link>
-        <Link href="/theme-6/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 6
-        </Link>
-        <Link href="/theme-7/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 7
-        </Link>
-        <Link href="/theme-8/index.html" className="block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition-colors duration-200">
-          Theme 8
-        </Link>
+    <>
+      <div id="hero" className="hero_area">
+        <HeaderSection isTopPage={true} />
+        <SliderSection />
       </div>
-    </div>
+      <ProductSection layoutPadding={true} isTopPage={true} />
+      <AboutSection isTopPage={true} layoutPadding={true} />
+      <AchievementSection layoutPadding={true} isTopPage={true} />
+      <TestimonialSection layoutPadding={true} />
+      <BackToTopButton />
+    </>
   )
 }
