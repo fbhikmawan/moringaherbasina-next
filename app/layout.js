@@ -16,11 +16,10 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://nurhadi.asaidgroup.com'),
+  metadataBase: new URL('https://www.moringaherbasina.com'),
   title: 'Moringa Herbasina',
   lang: 'en',
   charset: 'utf-8',
-  robots: 'noindex,nofollow',
   keywords: 'moringa herbasina, moringa, moringa leaves, moringa tea-bag, moringa powder, kelor, daun kelor, teh kelor, kelor bubuk',
   alternates: {
     canonical: '/',
