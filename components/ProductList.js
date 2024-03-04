@@ -16,8 +16,6 @@ import MoringaCapsule2 from '/assets/images/moringa-capsules-2.webp'
 import MoriChoco from '/assets/images/mori-choco.webp'
 import MoriChoco2 from '/assets/images/mori-choco-2.webp'
 import MoriChoco3 from '/assets/images/mori-choco-3.webp'
-import Momie from '/assets/images/momie.webp'
-import Momie2 from '/assets/images/momie-2.webp'
 import MoringaSoap from '/assets/images/moringa-soap.webp'
 
 import './product-list.css';
@@ -56,7 +54,7 @@ export const products = [
           "https://down-id.img.susercontent.com/file/fc033d983003d95ac23b7dfc6f73430c",
         ],
         description: "Moringa Infusion terbuat dari serbuk daun kelor organik yang diproses dengan pada ruang tertutup dengan suhu dan kelembaban yang terkontrol sehingga kandungan nutrisi dalam daun tetap terkunci didalamnya.\r\n1 sachet isi 5 teabags@ 2 gram\r\nManfaat Moringa Infusion daun kelor (Moringa oleifera):\r\n1. Menormalkan tekanan darah\r\n2. Menormalkan kadar gula dalam darah\r\n3. Menormalkan kadar kolesterol\r\n4. Menutrisi mata dan otak\r\n5. Meningkatkan daya tahan tubuh",
-        link: "https://shope.ee/7AExOjXbSp"
+        link: "https://shope.ee/7AExOjXbSp?share_channel_code=1"
       },
       {
         title: "Superfood Moringa Infusion Moringa Infusion Box at 20 teabags",
@@ -71,7 +69,7 @@ export const products = [
           "https://down-id.img.susercontent.com/file/2664cc2e00f970bfae6fe7df28ecb281"
         ],
         description: "Moringa Infusion Moringa Infusion SuperFood terbuat dari 100% daun kelor organik pilihan\r\nisi 20 tea bags @ 2 gram\r\nCara penyajian:\r\nseduh dengan air panas\r\nbisa ditambahkan madu\r\nminum 2 kali sehari\r\nPIRT No. 5133522011292-25\r\nProses pengeringan daunnya tidak dengan sinar matahari melainkan dikeringkan pada tempat yang tertutup dengan suhu dan kelembaban yang terkontrol sehingga nutrisinya tetap terkunci di dalamnya.\r\nManfaat Daun Kelor :\r\n1. Meningkatkan pertahanan alami tubuh\r\n2. Menyediakan nutrisi untuk mata dan otak\r\n3. Meningkatkan dan menormalisasi fungsi hati dan ginjal\r\n4. Meningkatkan energi non gula\r\n5. Bertindak sebagai antioksidan\r\n6. anti inflamasi alami\r\n7. Menstabilkan kadar gula normal dalam darah\r\n8. Meningkatkan serum alami kolesterol\r\n9. Menghilangkan munculnya keriput dan garis garis halus dipermukaan wajah\r\n10. Meningkatkan sistem peredaran darah yang sehat",
-        link: "https://shope.ee/6UzGbSBEIi"
+        link: "https://shope.ee/6UzGbSBEIi?share_channel_code=1"
       },
       {
         title: "MORINGATEA",
@@ -81,7 +79,7 @@ export const products = [
           "https://down-id.img.susercontent.com/file/id-11134207-7qukw-lkes3xhj64l539"
         ],
         description: "Moringa Tea is a moringa leaf tea bag, 1 can contains 10 tea bags.",
-        link: "https://shope.ee/3VLf22g1FH"
+        link: "https://shope.ee/3VLf22g1FH?share_channel_code=1"
       }
     ]
   },
@@ -95,7 +93,20 @@ export const products = [
     title: "Moringa Powder",
     shortDesc: "Energize your life with Moringa Powder, \r\na nutrient-packed powerhouse for optimal health.",
     longDesc: "Moringa Powder is a true nutritional champion, densely packed with vitamins, minerals, and amino acids essential for robust health. Its high antioxidant content, including flavonoids and polyphenols, combats oxidative stress and inflammation, which are key factors in chronic disease prevention. This versatile powder supports liver health, helps balance hormones, and may even have a positive impact on blood sugar levels and digestion. Incorporate Moringa Powder into your diet to harness the benefits of this 'miracle tree' and elevate your overall wellness." ,
-    subProducts: []
+    subProducts: [
+      {
+        title: "MORINGA POWDER",
+        slug: "moringa-powder",
+        source: "Shopee",
+        images: [
+          "https://down-id.img.susercontent.com/file/id-11134207-7r98q-lsh1ymhvgi1236",
+          "https://down-id.img.susercontent.com/file/id-11134207-7r98r-lsh1ymghiiyh7c",
+          "https://down-id.img.susercontent.com/file/id-11134207-7r98q-lsh1ymghiiu1a1"
+        ],
+        description: "Net 100 gram bottle packaging",
+        link: "https://shope.ee/7fC2yCnZ9O?share_channel_code=1"
+      }
+    ]
   },
   { 
     images: [
@@ -117,7 +128,7 @@ export const products = [
           "https://down-id.img.susercontent.com/file/a64b8e51d4d3f56cf74dc1f98e62a6f3",
         ],
         description: "",
-        link: "https://shope.ee/5pjZoPZir8"
+        link: "https://shope.ee/5pjZoPZir8?share_channel_code=1"
       },
       {
         title: "SuperFood Moringa Capsules at 100 capsules",
@@ -127,7 +138,7 @@ export const products = [
           "https://down-id.img.susercontent.com/file/af51bedd5dfb17eeffb035ea49a52665",
         ],
         description: "",
-        link: "https://shope.ee/lmrjU74p"
+        link: "https://shope.ee/lmrjU74p?share_channel_code=1"
       }
     ]
   },
@@ -155,7 +166,7 @@ export const products = [
           "https://down-id.img.susercontent.com/file/92ec3777e9a46d4544ac4e8f0b533029",
         ],
         description: "",
-        link: "https://shope.ee/6KfqPQ4ipa"
+        link: "https://shope.ee/6KfqPQ4ipa?share_channel_code=1"
       }
     ]
   },
@@ -177,7 +188,7 @@ export const products = [
           "https://down-id.img.susercontent.com/file/id-11134201-7qul0-lfp2ulwhe1hd86"
         ],
         description: "",
-        link: "https://shope.ee/9A01mfAj7Ra"
+        link: "https://shope.ee/9A01mfAj7Ra?share_channel_code=1"
       }
     ]
   },

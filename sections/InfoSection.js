@@ -29,16 +29,10 @@ export default function InfoSection() {
             </div>
             <div className="col-md-3 py-3 py-md-0 ">
               <div className="social_box justify-content-center justify-content-lg-start">
-                <Link href="http://www.facebook.com" target="_blank">
-                  <i className="fa fa-facebook" aria-hidden="true"></i>
+                <Link href="https://www.tiktok.com/@herbasina_official" target="_blank" prefetch={true}>
+                  <svg xmlns="http://www.w3.org/2000/svg" height={20} viewBox="0 0 448 512" fill='#FFF'><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
                 </Link>
-                <Link href="http://www.twitter.com" target="_blank">
-                  <i className="fa fa-twitter" aria-hidden="true"></i>
-                </Link>
-                <Link href="http://www.linkedin.com" target="_blank">
-                  <i className="fa fa-linkedin" aria-hidden="true"></i>
-                </Link>
-                <Link href="http://www.instagram.com" target="_blank">
+                <Link href="https://www.instagram.com/herbasina_official/" target="_blank" prefetch={true}>
                   <i className="fa fa-instagram" aria-hidden="true"></i>
                 </Link>
               </div>

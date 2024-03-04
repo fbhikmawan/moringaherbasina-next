@@ -6,6 +6,7 @@ import { products } from '@/components/ProductList';
 import { renderLineBreaks } from '@/services/utilities'
 import ButtonProductCTA from '@/components/ButtonProductCTA';
 import DisplaySubProduct from '@/components/DisplaySubProduct';
+import BreadcrumbCustom from '@/components/BreadcrumbCustom';
 
 import './style.css';
 
@@ -33,9 +34,16 @@ export default function ProductsName({params}) {
     return notFound();
   }
 
+  const breadcrumbItems = [
+    { text: 'Home', href: '/' },
+    { text: 'Products', href: '/products' },
+    { text: product.title, href: `/products/${product.slug}` },
+  ];
+
   return (
     <div className="px-4 py-5">
       <div className="container-md card shadow p-4 p-lg-5 p-xl-6">
+        <BreadcrumbCustom breadcrumbItems={breadcrumbItems} />
         <div className="col-12 mb-4 text-center product-images">
           {product.images.map((image, index) => (
             <div key={index} className="d-inline-block m-2 image-container">
