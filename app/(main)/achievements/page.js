@@ -115,8 +115,7 @@ export default function AchievementsPage() {
             <div className="heading_container heading_center">
               <h3>SMKN Ngasem Internship</h3>
               <p>
-                Internship for<br className="pc-only" />
-                Sekolah Menengah Kejuruan Negeri - Ngasem
+                Internship for<br className="pc-only" /> Sekolah Menengah Kejuruan Negeri - Ngasem
               </p>
             </div>
             <div className="row">
@@ -127,8 +126,7 @@ export default function AchievementsPage() {
         <div className="heading_container heading_center pt-4 pt-md-5">
           <h2>Our Workshop & Training</h2>
           <p>
-            We never stop learning and improving ourselves.
-            <br className="pc-only" /> Enhancing our knowledge and skills in Moringa leaf processing through continuous learning.
+            We never stop learning and improving ourselves.<br className="pc-only" /> Enhancing our knowledge and skills in Moringa leaf processing through continuous learning.
           </p>
         </div>
         <div className="row justify-content-center">
