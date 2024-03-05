@@ -47,8 +47,7 @@ export default function InfoSection() {
                   Moringa Herbasina
                 </h5>
                 <p>
-                  We produce, manage and deliver Moringa products for local and export markets.
-                  <br className="pc-only" />We are committed to deliver the best quality Moringa products to our customers.
+                  We produce, manage and deliver Moringa products for local and export markets.<br className="pc-only" /> We are committed to deliver the best quality Moringa products to our customers.
                 </p>
               </div>
             </div>
