@@ -3,6 +3,7 @@ import { GoogleTagManager } from '@next/third-parties/google'
 
 import InfoSection from '/sections/InfoSection'
 import FooterSection from '/sections/FooterSection'
+import ClarityScript from '/components/ClarityScript'
 
 import 'jquery-nice-select/css/nice-select.css'
 import '/assets/css/font-awesome.min.css'
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
         <InfoSection />
         <FooterSection />
         <GoogleTagManager gtmId="G-7Z1EVR64DN" />
+        <ClarityScript />
       </body>
     </html>
   )
