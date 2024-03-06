@@ -115,7 +115,7 @@ const products = [
 ];
 
 module.exports = {
-  siteUrl: "https://nurhadi.asaidgroup.com",
+  siteUrl: 'https://nurhadi.asaidgroup.com',
   generateRobotsTxt: true,
   // Add a map function to generate additional sitemap entries for dynamic routes
   additionalPaths: async (config) => {
