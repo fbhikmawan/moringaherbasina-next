@@ -1,4 +1,5 @@
 import { Poppins } from 'next/font/google'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 import InfoSection from '/sections/InfoSection'
 import FooterSection from '/sections/FooterSection'
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
         {children}
         <InfoSection />
         <FooterSection />
+        <GoogleTagManager gtmId="G-7Z1EVR64DN" />
       </body>
     </html>
   )
