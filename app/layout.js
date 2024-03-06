@@ -1,5 +1,5 @@
 import { Poppins } from 'next/font/google'
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import InfoSection from '/sections/InfoSection'
 import FooterSection from '/sections/FooterSection'
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
         {children}
         <InfoSection />
         <FooterSection />
-        <GoogleTagManager gtmId="G-7Z1EVR64DN" />
+        <GoogleAnalytics gtmId="G-7Z1EVR64DN" />
         <ClarityScript />
       </body>
     </html>
