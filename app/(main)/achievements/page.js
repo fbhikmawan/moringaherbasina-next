@@ -10,6 +10,9 @@ export async function generateMetadata({ params, searchParams }, parent) {
   return {
     title: `Achievements | ${previousTitle}`,
     description: `We're proud of the work we've done and the milestones we've achieved.`,
+    openGraph: {
+      images: ['/assets/images/og-logo.png'],
+    },
   };
 }
 
