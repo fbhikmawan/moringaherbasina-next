@@ -9,7 +9,13 @@ export async function generateMetadata({ params, searchParams }, parent) {
     title: `Products | ${previousTitle}`,
     description: `We produce various moringa based products`,
     openGraph: {
-      images: ['/assets/images/og-logo.png'],
+      images: [
+        {
+          url: '/assets/images/og-logo.png',
+          width: 1200,
+          height: 630,
+        },
+      ],
     },
   }
 }

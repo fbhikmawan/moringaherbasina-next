@@ -12,7 +12,13 @@ export async function generateMetadata({ params, searchParams }, parent) {
   return {
     description: description_text,
     openGraph: {
-      images: ['/assets/images/og-logo.png'],
+      images: [
+        {
+          url: '/assets/images/og-logo.png',
+          width: 1200,
+          height: 630,
+        },
+      ],
     },
   }
 }

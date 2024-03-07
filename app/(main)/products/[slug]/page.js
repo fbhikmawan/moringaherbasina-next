@@ -24,9 +24,13 @@ export async function generateMetadata({ params, searchParams }, parent) {
   return {
     title: `${product.title} | ${previousTitle}`,
     description: product.shortDesc,
-    openGraph: {
-      images: ['/assets/images/og-logo.png'],
-    },
+    images: [
+      {
+        url: '/assets/images/og-logo.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
   }
 }
 
