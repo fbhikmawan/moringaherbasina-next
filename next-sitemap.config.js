@@ -126,7 +126,14 @@ module.exports = {
       priority: 0.7,
     }));
 
+    // Add an entry for the favicon
+  const faviconEntry = {
+    loc: '/favicon.ico',
+    changefreq: 'daily',
+    priority: 0.7,
+  };
+
     // Return the dynamic product routes
-    return dynamicProductRoutes;
+    return [...dynamicProductRoutes, faviconEntry];
   },
 };
