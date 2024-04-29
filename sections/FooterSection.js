@@ -11,7 +11,7 @@ export default function FooterSection() {
     <footer className="footer_section">
       <div className="container-sm">
         <p>
-          Managed by <strong>ASAid</strong><br /> &copy; {currentYear} Moringa Herbasina All Rights Reserved.
+          Managed by <strong><Link href="https://www.asaidgroup.com" target="_blank" prefetch={true}>ASAid</Link></strong><br /> &copy; {currentYear} Moringa Herbasina All Rights Reserved.
         </p>
       </div>
       <TawkComponent 
