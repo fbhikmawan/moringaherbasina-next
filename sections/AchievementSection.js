@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Achievement from "../components/Achievement";
 
 import Certification from "/assets/images/certification.webp";
-import Community from "/public/assets/images//activities/dharma-wanita/dharma-wanita-2.webp";
+import Community from "/public/assets/images/activities/pameran-produk-unggulan/pameran-produk-unggulan-4.webp";
 import Innovation from "/assets/images/moringa-products.webp";
 import CSR from "/public/assets/images/activities/smkn-ngasem/smkn-ngasem-2.webp";
 
@@ -37,7 +37,7 @@ export default function AchievementSection({ layoutPadding }) {
         <div className="row justify-content-center">
           <div className="btn-box">
             <Link href="/achievements" prefetch={true} className="mx-2">
-              Follow Our Journeys
+              See More Our Journeys
             </Link>
           </div>
         </div>
