@@ -36,10 +36,10 @@ export default function AboutSection({ layoutPadding, isTopPage }) {
               ) : (
                 <>
                   <Link href="/contact" prefetch={true} className="mx-2">
-                    Reach Us
+                    Contact Us
                   </Link>
                   <Link href="/achievements" prefetch={true} className="mx-2">
-                    Follow Our Journeys
+                    See More Our Journeys
                   </Link>
                 </>
               )}
