@@ -4,6 +4,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import InfoSection from '/sections/InfoSection'
 import FooterSection from '/sections/FooterSection'
 import ClarityScript from '/components/ClarityScript'
+import TawkComponent from '/components/TawkComponent'
 
 import 'jquery-nice-select/css/nice-select.css'
 import '/assets/css/font-awesome.min.css'
@@ -17,11 +18,10 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://nurhadi.asaidgroup.com'),
+  metadataBase: new URL('https://www.moringaherbasina.com'),
   title: 'Moringa Herbasina',
   lang: 'en',
   charset: 'utf-8',
-  robots: 'noindex,nofollow',
   keywords: 'moringa herbasina, moringa, moringa leaves, moringa tea-bag, moringa powder, kelor, daun kelor, teh kelor, kelor bubuk',
   alternates: {
     canonical: '/',
@@ -43,6 +43,10 @@ export default function RootLayout({ children }) {
         <FooterSection />
         <GoogleAnalytics gtmId="G-7Z1EVR64DN" />
         <ClarityScript />
+        <TawkComponent 
+          propertyId="65a668ad8d261e1b5f53e4cb" 
+          widgetId="1hk90hqr7" 
+        />
       </body>
     </html>
   )
