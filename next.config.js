@@ -1,3 +1,4 @@
+const path = require('path')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // output: 'export',
@@ -7,6 +8,7 @@ const nextConfig = {
   // skipTrailingSlashRedirect: true,
   // Optional: Change the output directory `out` -> `dist`
   // distDir: 'dist',
+  outputFileTracingRoot: path.join(__dirname),
   images: {
     remotePatterns: [
       {

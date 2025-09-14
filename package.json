@@ -1,6 +1,6 @@
 {
-  "name": "nurhadi-web",
-  "version": "0.1.0",
+  "name": "moringaherbasina-next",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,16 +10,15 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "@next/third-parties": "^14.2.3",
-    "@tawk.to/tawk-messenger-react": "^2.0.2",
+    "@next/third-parties": "^15.5.3",
     "bootstrap": "^5.3.8",
     "jquery": "^3.7.1",
     "jquery-nice-select": "^1.1.0",
-    "next": "^14.2.3",
+    "next": "^15.5.3",
     "next-sitemap": "^4.2.3",
-    "react": "^18",
+    "react": "^19",
     "react-bootstrap": "^2.10.10",
-    "react-dom": "^18",
+    "react-dom": "^19",
     "react-icons": "^5.5.0",
     "react-image-gallery": "^1.4.0",
     "react-modal-image": "^2.6.0",
