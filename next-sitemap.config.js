@@ -1,5 +1,8 @@
 /** @type {import('next-sitemap').IConfig} */
 
+const siteUrl = process.env.SITE_URL;
+const disallowRobots = process.env.DISALLOW_ROBOTS;
+
 const products = [
   {
     slug: "dried-moringa-leaves",
@@ -115,8 +118,13 @@ const products = [
 ];
 
 module.exports = {
-  siteUrl: 'https://www.moringaherbasina.com',
+  siteUrl,
   generateRobotsTxt: true,
+  robotsTxtOptions: {
+    policies: disallowRobots
+      ? [{ userAgent: '*', disallow: '/' }]
+      : [{ userAgent: '*', allow: '/' }],
+  },
   // Add a map function to generate additional sitemap entries for dynamic routes
   additionalPaths: async (config) => {
     // Generate sitemap entries for dynamic product routes
