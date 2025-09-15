@@ -3,7 +3,8 @@
 # dependencies
 /node_modules
 /.pnp
-.pnp.js
+.yarn
+.pnp*
 .yarn/install-state.gz
 package-lock.json
 pnpm-lock.yaml
