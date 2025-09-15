@@ -121,7 +121,7 @@ module.exports = {
   siteUrl,
   generateRobotsTxt: true,
   robotsTxtOptions: {
-    policies: disallowRobots
+    policies: disallowRobots === 'true'
       ? [{ userAgent: '*', disallow: '/' }]
       : [{ userAgent: '*', allow: '/' }],
   },
