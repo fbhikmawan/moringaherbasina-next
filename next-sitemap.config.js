@@ -121,9 +121,9 @@ module.exports = {
   siteUrl,
   generateRobotsTxt: true,
   robotsTxtOptions: {
-    policies: disallowRobots
-      ? [{ userAgent: '*', disallow: '/' }]
-      : [{ userAgent: '*', allow: '/' }],
+    policies: disallowRobots === 'true'
+      ? { userAgent: '*', disallow: '/' }
+      : { userAgent: '*', allow: '/' },
   },
   // Add a map function to generate additional sitemap entries for dynamic routes
   additionalPaths: async (config) => {
