@@ -1,33 +1,42 @@
 {
-  "name": "moringaherbasina-next",
+  "name": "strapi-next-launchpad-example",
   "version": "1.0.0",
-  "private": true,
+  "description": "Next.js Launchpad Example powered by Strapi",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "postbuild": "next-sitemap"
+    "next": "yarn dev --prefix ../next/",
+    "strapi": "yarn dev --prefix ../strapi/",
+    "setup:next": "cd next && yarn && node --loader ts-node/esm ../scripts/copy-env.mts ./",
+    "setup:strapi": "cd strapi && yarn && node --loader ts-node/esm ../scripts/copy-env.mts ./",
+    "setup": "yarn install && yarn setup:next && yarn setup:strapi",
+    "dev": "yarn concurrently \"cd strapi && yarn develop\" \"npx wait-on http://localhost:1337 && cd next && yarn dev\"",
+    "seed": "cd strapi && yarn strapi import -f ./data/export_latest.tar.gz --force",
+    "export": "cd strapi && yarn strapi export --no-encrypt -f ./data/export_latest",
+    "repo:upstream": "git fetch upstream && git merge upstream/main",
+    "check:format": "prettier . --check --cache",
+    "fix:format": "prettier . --write --cache",
+    "fix": "yarn fix:format",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
-    "@next/third-parties": "^15.5.3",
-    "bootstrap": "^5.3.8",
-    "jquery": "^3.7.1",
-    "jquery-nice-select": "^1.1.0",
-    "next": "^15.5.3",
-    "next-sitemap": "^4.2.3",
-    "react": "^19",
-    "react-bootstrap": "^2.10.10",
-    "react-dom": "^19",
-    "react-icons": "^5.5.0",
-    "react-image-gallery": "^1.4.0",
-    "react-modal-image": "^2.6.0",
-    "react-multi-carousel": "^2.8.6",
-    "react-scroll": "^1.9.3",
-    "sass": "^1.92.1",
-    "sharp": "^0.34.3"
+    "@types/node": "^22.5.2",
+    "concurrently": "^8.2.2",
+    "typescript": "^5.0.0",
+    "wait-on": "^8.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.21"
-  }
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md,yml,yaml}": [
+      "yarn fix:format"
+    ],
+    "next/**/*.{js,jsx,ts,tsx}": [
+      "cd next && yarn lint --fix"
+    ]
+  },
+  "packageManager": "yarn@4.5.0"
 }
