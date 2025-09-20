@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import SliderSection from '@/sections/SliderSection'
 import HeaderSection from '@/sections/HeaderSection'
+import ProductSection from '@/sections/ProductSection'
 
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export default function Home() {
         <HeaderSection isTopPage={true} />
         <SliderSection />
       </div>
+      <ProductSection layoutPadding={true} isTopPage={true} />
     </>
   );
 }
