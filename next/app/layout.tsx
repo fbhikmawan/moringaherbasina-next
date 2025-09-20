@@ -6,6 +6,8 @@ import 'jquery-nice-select/css/nice-select.css'
 import './font-awesome.min.css'
 import './layout.scss'
 
+import InfoSection from '@/sections/InfoSection'
+import FooterSection from '@/sections/FooterSection'
 import ClarityScript from '@/components/ClarityScript'
 import TawkComponent from '@/components/TawkComponent'
 
@@ -33,6 +35,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         {children}
+        <InfoSection />
+        <FooterSection />
         {process.env.NODE_ENV === 'production' && (
           <>
             <GoogleAnalytics gaId="G-7Z1EVR64DN" />
