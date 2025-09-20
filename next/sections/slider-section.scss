@@ -1,0 +1,174 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "../app/mixins";
+
+.slider_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ffffff;
+  flex-grow: 1;
+  .container-fluid {
+    position: relative;
+  }
+  .detail-box {
+    text-align: center;
+    margin-bottom: 110px;
+    h1 {
+      font-weight: 700;
+      font-size: 60px;
+      text-transform: uppercase;
+      
+      @include custom-breakpoint-up(480px) {
+        font-size: 80px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 100px;
+      }
+    }
+    h2 {
+      font-size: 28px;
+      text-transform: uppercase;
+      
+      @include media-breakpoint-up(lg) {
+        font-size: 2rem;
+      }
+    }
+    p {
+      font-size: 20px;
+      margin-top: 25px;
+      
+      @include custom-breakpoint-up(480px) {
+        font-size: 24px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 28px;
+      }
+    }
+    a,
+    button {
+      display: inline-block;
+      padding: 10px 55px;
+      background-color: #ffffff;
+      border: 1px solid #ffffff;
+      color: #000000;
+      border-radius: 20px 20px 0 20px;
+      margin-top: 35px;
+      &:hover {
+        border: 1px solid white;
+        background-color: #0f5c09;
+        color: #ffffff;
+      }
+    }
+    .btn-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-top: 20px;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      a {
+        text-align: center;
+        width: 165px;
+      }
+      .btn1 {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #0f5c09;
+        color: #ffffff;
+        border-radius: 0;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        border: 1px solid #0f5c09;
+        &:hover {
+          background-color: transparent;
+          color: #0f5c09;
+        }
+      }
+    }
+  }
+  .carousel-indicators {
+    bottom: 0;
+    
+    @include media-breakpoint-down(md) {
+      bottom: -80px;
+    }
+
+    li {
+      width: 15px;
+      height: 15px;
+      margin: 3px 6px;
+      background-color: transparent;
+      border: 3px solid #ffffff;
+      border-radius: 100%;
+      opacity: 1;
+      list-style-type: none;
+      cursor: pointer;
+
+      &.active {
+        background-color: #ffffff;
+      }
+
+      ::marker{
+        display: none;
+      }
+    }
+  }
+  .img-box {
+    img {
+      width: 100%;
+    }
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    opacity: 1;
+    color: #26750b;
+    font-size: 14px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    border-radius: 10px;
+    
+    @include media-breakpoint-down(md) {
+      top: auto;
+      bottom: 0;
+      margin: 0 5px;
+    }
+    
+    &:hover {
+      border: 1px solid white;
+      background-color: #0f5c09;
+      color: #ffffff;
+    }
+  }
+  
+  .carousel-control-prev {
+    left: 25px;
+    
+    @include media-breakpoint-down(md) {
+      right: 50%;
+      left: auto;
+    }
+  }
+  .carousel-control-next {
+    right: 25px;
+
+    @include media-breakpoint-down(md) {
+      left: 50%;
+      right: auto;
+    }
+  }
+}

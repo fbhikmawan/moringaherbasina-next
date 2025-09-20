@@ -1,0 +1,47 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.about_section {
+  .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .img-box {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    
+    @include media-breakpoint-up(lg) {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  .detail-box {
+    p {
+      color: #1f1f1f;
+      margin-top: 15px;
+    }
+    a {
+      display: inline-block;
+      padding: 10px 35px;
+      background-color: #0f5c09;
+      color: #ffffff;
+      border-radius: 0px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      border: 1px solid #0f5c09;
+      margin-top: 15px;
+      border-radius: 10px;
+      &:hover {
+        background-color: white;
+        color: #0f5c09;
+      }
+    }
+  }
+}
