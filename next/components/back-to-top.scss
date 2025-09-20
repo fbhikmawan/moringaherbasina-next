@@ -1,0 +1,36 @@
+.back-to-top {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 90px;
+  right: -160px;
+  padding: 7px 10px;
+  background-color: #0f5c09;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: right 0.5s;
+  z-index: 1;
+  &:hover {
+    background-color: #26750b;
+  }
+  & > * {
+    display: block;
+  }
+  .arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #ffffff;
+    margin-bottom: 5px;
+  }
+  span {
+    font-size: 12px;
+  }
+  &.visible {
+    right: 25px;
+  }
+}

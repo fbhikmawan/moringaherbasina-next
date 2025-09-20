@@ -6,6 +6,7 @@ import ProductSection from '@/sections/ProductSection'
 import AboutSection from '@/sections/AboutSection'
 import AchievementSection from '@/sections/AchievementSection'
 import TestimonialSection from '@/sections/TestimonialSection'
+import BackToTopButton from '@/components/ButtonBackToTop'
 
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function Home() {
       <AboutSection isTopPage={true} layoutPadding={true} />
       <AchievementSection layoutPadding={true} />
       <TestimonialSection layoutPadding={true} />
+      <BackToTopButton />
     </>
   );
 }
