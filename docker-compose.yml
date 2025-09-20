@@ -1,0 +1,76 @@
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-strongSecretPassword}
+      POSTGRES_DB: ${POSTGRES_DB:-localdb}
+      POSTGRES_INITDB_ARGS: "--data-checksums"
+    command: >
+      postgres
+        -c shared_buffers=256MB
+        -c effective_cache_size=768MB
+        -c work_mem=4MB
+        -c maintenance_work_mem=64MB
+        -c max_connections=40
+        -c max_worker_processes=2
+        -c max_parallel_workers=2
+        -c max_parallel_workers_per_gather=1
+        -c random_page_cost=1.1
+        -c effective_io_concurrency=200
+        -c autovacuum_vacuum_scale_factor=0.05
+        -c autovacuum_analyze_scale_factor=0.025
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    networks:
+      - pg_network
+    # Resource constraints
+    deploy:
+      resources:
+        limits:
+          memory: 768M
+          cpus: '2'
+        reservations:
+          memory: 384M
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 40s
+
+  # pgAdmin - PostgreSQL Admin Panel
+  pgadmin:
+    image: dpage/pgadmin4:9.8
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-developer@asaidgroup.com}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-pgAdminSecretPass}
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    ports:
+      # Only accessible from localhost for security
+      - "${PGADMIN_PORT:-5050}:80"
+    networks:
+      - pg_network
+    # Resource constraints
+    deploy:
+      resources:
+        limits:
+          memory: 384M
+          cpus: '0.5'
+        reservations:
+          memory: 192M
+    depends_on:
+      - postgres
+
+networks:
+  pg_network:
+    driver: bridge
+
+volumes:
+  pg_data:
+    driver: local
+  pgadmin_data:
+    driver: local
