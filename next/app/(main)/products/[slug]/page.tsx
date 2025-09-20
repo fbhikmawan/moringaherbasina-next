@@ -16,10 +16,17 @@ type Props = {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
+export const dynamicParams = false
+
+export async function generateStaticParams() {
+  return products.map((product) => ({
+    slug: product.slug,
+  }))
+}
+
 export async function generateMetadata(
   { params }: Props
 ): Promise<Metadata> {
-  // read route params
   const { slug } = await params
   const product = products.find(p => p.slug === slug);
   
