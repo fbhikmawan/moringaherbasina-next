@@ -4,6 +4,7 @@ import SliderSection from '@/sections/SliderSection'
 import HeaderSection from '@/sections/HeaderSection'
 import ProductSection from '@/sections/ProductSection'
 import AboutSection from '@/sections/AboutSection'
+import AchievementSection from '@/sections/AchievementSection'
 
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function Home() {
       </div>
       <ProductSection layoutPadding={true} isTopPage={true} />
       <AboutSection isTopPage={true} layoutPadding={true} />
+      <AchievementSection layoutPadding={true} />
     </>
   );
 }
