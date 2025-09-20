@@ -1,17 +1,14 @@
 import React from "react";
-import { type Metadata, type ResolvingMetadata } from 'next'
+import { type Metadata } from 'next'
 
 import PhotoGallery from "@/components/PhotoGallery";
 
 import "./page.scss";
 
-export async function generateMetadata(
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  const previousTitle = (await parent).title?.absolute || "";
+export async function generateMetadata(): Promise<Metadata> {
 
   return {
-    title: `Achievements | ${previousTitle}`,
+    title: `Achievements`,
     description: `We're proud of the work we've done and the milestones we've achieved.`,
   };
 }

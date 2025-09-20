@@ -1,15 +1,14 @@
 import React from 'react'
-import { type Metadata, type ResolvingMetadata } from 'next'
+import { type Metadata } from 'next'
 
 import ProductSection from '@/sections/ProductSection'
 
-export async function generateMetadata(
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  const previousTitle = (await parent).title?.absolute || ''
-
+export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: `Products | ${previousTitle}`,
+    title: {
+      default: 'Products',
+      template: '%s | Products', 
+    },
   }
 }
 

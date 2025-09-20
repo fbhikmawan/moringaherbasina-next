@@ -1,12 +1,9 @@
 import React from "react";
-import { type Metadata, type ResolvingMetadata } from 'next'
+import { type Metadata } from 'next'
 
-export async function generateMetadata(
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  const previousTitle = (await parent).title?.absolute || ''
+export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: `Reach Us | ${previousTitle}`,
+    title: `Reach Us`,
     description: `Jl. Waduk Sonorejo, Dusun Budengan. RT. 08 Rw. 03 Kec. Padangan. Kabupaten Bojonegoro, Jawa Timur, Indonesia`,
   }
 }

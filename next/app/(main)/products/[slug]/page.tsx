@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { type Metadata, type ResolvingMetadata } from 'next'
+import { type Metadata } from 'next'
 import { notFound } from 'next/navigation';
 
 import { products } from '@/components/ProductList';
@@ -17,23 +17,24 @@ type Props = {
 }
 
 export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata
+  { params }: Props
 ): Promise<Metadata> {
   // read route params
   const { slug } = await params
-  const previousTitle = (await parent).title?.absolute || ''
   const product = products.find(p => p.slug === slug);
   
   if (!product) {
     return {
-      title: `Product Not Found | ${previousTitle}`,
+      title: `Product Not Found`,
       description: `Product ${slug} is not Found`,
     }
   }
 
   return {
-    title: `${product.title} | ${previousTitle}`,
+    title: {
+      default: `${product.title} | Products`,
+      template: `%s | ${product.title}`,
+    },
     description: product.shortDesc
   }
 }
