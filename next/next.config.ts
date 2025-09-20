@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  
   async headers() {
     return [
       {
@@ -31,7 +32,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none';"
+            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://embed.tawk.to https://www.clarity.ms https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: https://www.google-analytics.com https://va.tawk.to; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://va.tawk.to wss://va.tawk.to https://www.clarity.ms; frame-src https://embed.tawk.to; frame-ancestors 'none';"
           },
           {
             key: 'Referrer-Policy',
