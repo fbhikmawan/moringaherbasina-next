@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { type StaticImageData } from 'next/image';
+import { type Product } from '@/type/product';
 
 import CarouselList from '@/components/CarouselList';
 import RotatingImageDisplay from '@/components/RotatingImageDisplay';
@@ -20,24 +20,6 @@ import MoriChoco3 from '@/assets/images/mori-choco-3.webp'
 import MoringaSoap from '@/assets/images/moringa-soap.webp'
 
 import './product-list.css';
-
-type SubProduct = {
-  title: string
-  slug: string
-  source: string
-  images: string[]
-  description: string
-  link: string
-}
-
-type Product = {
-  images: StaticImageData[]
-  slug: string
-  title: string
-  shortDesc: string
-  longDesc: string
-  subProducts: SubProduct[]
-}
 
 export const products: Product[] = [
   { 

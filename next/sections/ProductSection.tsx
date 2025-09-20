@@ -5,7 +5,10 @@ import ProductList from '@/components/ProductList'
 
 import './product-section.scss'
 
-type ProductSectionProps = { layoutPadding?: boolean; isTopPage?: boolean }
+type ProductSectionProps = { 
+  layoutPadding?: boolean; 
+  isTopPage?: boolean 
+}
 
 export default function ProductSection({ layoutPadding, isTopPage }: ProductSectionProps) {
   const paddingClass = layoutPadding ? "layout_padding" : '';
@@ -22,7 +25,7 @@ export default function ProductSection({ layoutPadding, isTopPage }: ProductSect
           </p>
         </div>
         <div className="service_container">
-          <ProductList isTopPage={isTopPage} />
+          <ProductList isTopPage={isTopPage ?? false} />
         </div>
         {isTopPage && (
           <div className="btn-box">

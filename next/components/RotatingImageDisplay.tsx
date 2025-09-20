@@ -6,7 +6,7 @@ import Image, { type StaticImageData } from 'next/image';
 import './rotating-image-display.css'; // CSS file for animation
 
 interface RotatingImageDisplayProps {
-  images: StaticImageData[];
+  images: string[] | StaticImageData[];
 }
 
 export default function RotatingImageDisplay({ images }: RotatingImageDisplayProps) {

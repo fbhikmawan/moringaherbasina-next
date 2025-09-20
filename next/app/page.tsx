@@ -10,6 +10,7 @@ import BackToTopButton from '@/components/ButtonBackToTop'
 
 
 export const metadata: Metadata = {
+  title: 'Moringa Herbasina',
   description: 'Moringa Herbasina. We produce, manage and deliver Moringa products for local and export markets. We are committed to deliver the best quality Moringa products to our customers.',
 };
 
