@@ -5,6 +5,7 @@ import HeaderSection from '@/sections/HeaderSection'
 import ProductSection from '@/sections/ProductSection'
 import AboutSection from '@/sections/AboutSection'
 import AchievementSection from '@/sections/AchievementSection'
+import TestimonialSection from '@/sections/TestimonialSection'
 
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function Home() {
       <ProductSection layoutPadding={true} isTopPage={true} />
       <AboutSection isTopPage={true} layoutPadding={true} />
       <AchievementSection layoutPadding={true} />
+      <TestimonialSection layoutPadding={true} />
     </>
   );
 }
